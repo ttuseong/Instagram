@@ -1,8 +1,10 @@
+body { background-color: #fafafa; }
 .container { width: 935px; margin: 0 auto;}
 .clearfix:after { content: ''; display: table; clear: both }
 
 /* header */
-.h_fixed { position: fixed; width: 100%; border-bottom: 1px solid; border-color: rgb(219,219,219);}
+#header {height: 54px;}
+.h_fixed { background-color: white; position: fixed; width: 100%; border-bottom: 1px solid; border-color: rgb(219,219,219);}
 .h_contents{ height: 54px; position: relative;}
 .h_left { }
 .h_left .logoImg {width: 110px; height: 38px; margin-top: 8px;}
@@ -15,12 +17,17 @@
 .h_right .userImg { width: 22px; height: 22px; border-radius: 50%;}
 
 
-/* test용 코드 */
-section { height: 100vh;}
-
+/* contents */
+#mainSection {padding-top: 30px;}
+.story {display: inline-block; overflow: hidden; border: 1px solid rgba(var(--b6a,219,219,219),1); border-radius: 3px; padding: 16px 0; margin-bottom: 24px; box-sizing: border-box; height: 118px; width: 614px;}
+.story ul { padding-left: 8px; }
+.story img { position: absolute; width: 56px; height: 56px; border-radius: 50%; border: 1px solid rgba(var(--b3f,250,250,250),1); box-sizing: border-box; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.story .story_item {display: inline-block; position: relative; width: 74.5px; height: 84px;}
+.story .story_item p { font-size: 12px; margin-top: 8px; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width : 80px; text-align: center;}
+.story .story_size { width: 1000px;} /* js를 통해 길이가 변할 예정 */
+.story .circle_background { position: absolute; left: 50%; transform: translateX(-50%);width: 60px; height: 60px; background: radial-gradient(circle at bottom left, #F58529 20%, #C42D91); border-radius: 50%; }
 
 /* mediaquery */
-
 @media(max-width : 935px){
   .container { width: 100%;}
   .h_left {padding-left: 20px;}
