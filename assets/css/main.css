@@ -18,6 +18,8 @@ body { background-color: #fafafa; }
 
 /* mediaquery */
 @media(max-width : 935px){
+  .h_left {padding-left: 20px;}
+  .h_right { right: 20px;}
   .container { width: 100%;}
 }
 
