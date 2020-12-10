@@ -10,7 +10,7 @@
 .story .circle_background { position: absolute; left: 50%; transform: translateX(-50%);width: 60px; height: 60px; background: radial-gradient(circle at bottom left, #F58529 20%, #C42D91); border-radius: 50%; }
 
 /* post */
-#article { display: inline-block; border: 1px solid #DBDBDB; background-color: white; border-radius: 3px;}
+#article { margin-bottom: 60px; width: 614px; display: inline-block; border: 1px solid #DBDBDB; background-color: white; border-radius: 3px;}
 .post .article_header { position: relative; padding: 16px; width: 582px; height: 27px;}
 .post .article_user_pos img { width: 32px; height: 32px; border-radius: 50%;}
 .post .article_user_pos { display: flex; align-items: center;}
@@ -22,9 +22,19 @@
 .post .article_icons{position: relative; height: 40px;}
 .post .article_icons .left_icon { display: inline-block; position: absolute; left: 16px; top: 50%; transform: translateY(-50%);}
 .post .article_icons .left_icon span { display: inline-block; margin: 0 5px 0 5px;}
-.post .article_icons .right_icon {position: absolute; right: 16px; top: 50%; transform: translateY(-50%);}
+.post .article_icons .right_icon {position: absolute; right: 16px; top: 50%; transform: translateY(-50%); font-weight: 600;}
 
+.post .article_reaction { padding: 0 16px;}
+.post .article_reaction .liked .liked_count { font-weight: bold; font-size: 14px; color: #262626;}
+.post .article_reaction .user_name { font-weight: 600; font-size: 12px;}
+.post .article_reaction .description {font-size: 12px; margin-top: 13px; margin-bottom: 8px;}
+.post .article_reaction .comments { font-size: 12px;}
+.post .article_reaction .time_log { color: rgba(var(--f52,142,142,142),1); font-size: 9px; margin-top: 11px;}
+
+.post .user_comment { margin-top: 12px; border-top: 1px solid #dbdbdb; padding: 0 16px; min-height: 56px; display: flex; align-items: center;}
 .post .user_comment .user_text { resize: none; max-height: 80px;}
+.post .user_comment textarea { overflow: hidden; float: left; height: 18px; width: 555px; box-sizing: border-box; border: 0}
+.post .user_comment button { font-weight: bold; opacity: .3; color: #0095f6; border: 0; background: 0; padding: 0}
 
 /* mediaquery */
 @media(max-width : 935px){
@@ -33,5 +43,5 @@
 }
 
 @media(max-width : 575px){
-  
+
 }
