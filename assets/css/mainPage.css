@@ -1,4 +1,5 @@
-/* contents */
+/* maincontents */
+.maincontents { float: left; display: inline-block; width: 614px; margin-right: 28px;}
 /* story */
 #mainSection {padding-top: 30px;}
 .story {display: inline-block; overflow: hidden; border: 1px solid rgba(var(--b6a,219,219,219),1); border-radius: 3px; padding: 16px 0; margin-bottom: 24px; box-sizing: border-box; height: 118px; width: 614px;}
@@ -37,9 +38,24 @@
 .post .user_comment textarea { overflow: hidden; float: left; height: 18px; width: 555px; box-sizing: border-box; border: 0}
 .post .user_comment button { font-weight: bold; opacity: .3; color: #0095f6; border: 0; background: 0; padding: 0}
 
+/* maincontents */
+.subcontents { position: fixed; top: 106px;}
+
+/* sub_user_info */
+.sub_user_info .sub_user_content .helper {display: inline-block; vertical-align: middle;}
+.sub_user_info .sub_user_content .sub_user_img { display: inline-block; vertical-align: middle; }
+.sub_user_info .sub_user_img img { width: 56px; height: 56px; border-radius: 50%;}
+.sub_user_info .sub_user_content .sub_user_name { display: inline-block; vertical-align: middle; margin: 0 3px 0 12px;}
+.sub_user_info .sub_user_content .sub_user_name_nickName {margin-bottom: 4px;}
+.sub_user_info .sub_user_content .sub_user_name_nickName p { font-weight: 600; text-overflow: ellipsis; color: #262626; font-size: 14px;}
+.sub_user_info .sub_user_content .sub_user_name_realName p { font-size: 14px; font-weight: 400; color: #8e8e8e;}
+.sub_user_info .sub_user_content .sub_user_change { display: inline-block; vertical-align: middle; }
+.sub_user_info .sub_user_content .sub_user_change button { border: none; background: 0; color: #0095f6; font-weight: 600; font-size: 12px;}
+
 /* mediaquery */
 @media(max-width : 935px){
   .maincontainer { width: 614px; }
+  .subcontents { display: none; }
 }
 
 @media(max-width : 575px){
