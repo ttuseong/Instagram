@@ -45,13 +45,35 @@
 .sub_user_info .sub_user_content .helper {display: inline-block; vertical-align: middle;}
 .sub_user_info .sub_user_content .sub_user_img { display: inline-block; vertical-align: middle; }
 .sub_user_info .sub_user_img img { width: 56px; height: 56px; border-radius: 50%;}
-.sub_user_info .sub_user_content .sub_user_name { display: inline-block; vertical-align: middle; margin: 0 3px 0 12px;}
+.sub_user_info .sub_user_content .sub_user_name { display: inline-block; vertical-align: middle; margin: 0 120px 0 12px;}
 .sub_user_info .sub_user_content .sub_user_name_nickName {margin-bottom: 4px;}
 .sub_user_info .sub_user_content .sub_user_name_nickName p { font-weight: 600; text-overflow: ellipsis; color: #262626; font-size: 14px;}
 .sub_user_info .sub_user_content .sub_user_name_realName p { font-size: 14px; font-weight: 400; color: #8e8e8e;}
 .sub_user_info .sub_user_content .sub_user_change { display: inline-block; vertical-align: middle; }
 .sub_user_info .sub_user_content .sub_user_change button { border: none; background: 0; color: #0095f6; font-weight: 600; font-size: 12px;}
 
+.user_Recommendation { margin-top: 20px; margin-bottom: 29px;}
+.user_Recommendation .user_Recommendation_texts .user_Recommendation_text { font-size: 14px; line-height: 18px; font-weight: 600; color: #8c8c8c; margin-right: 117px;}
+.user_Recommendation .user_Recommendation_texts .user_Recommendation_more { font-size: 12px; line-height: 14px; font-weight: 600; color: #262626; }
+
+.user_Recommendation .user_Recommendation_info { margin-top: 16px; padding-left: 4px;}
+.user_Recommendation .user_Recommendation_info .user_Recommendation_info_content { margin-bottom: 12px;}
+.user_Recommendation .user_Recommendation_info .user_Recommendation_info_content:last-child { margin-bottom: 0;}
+.user_Recommendation .user_Recommendation_info .user_Recommendation_info_img { margin-right: 5px; display: inline-block; vertical-align: middle;}
+.user_Recommendation .user_Recommendation_info .user_Recommendation_info_img img { width: 32px; height: 32px; border-radius: 50%; border: 1px solid #fafafa; }
+.user_Recommendation .user_Recommendation_info .user_Recommendation_info_name { margin-right: 95px; display: inline-block; vertical-align: middle; }
+.user_Recommendation .user_Recommendation_info .user_Recommendation_info_name .user_Recommendation_info_name_nick { color: #262626; font-weight: 600; font-size: 14px; margin-bottom: 4px;}
+.user_Recommendation .user_Recommendation_info .user_Recommendation_info_name .user_Recommendation_info_name_text { font-size: 12px;line-height: 14px; color: #8c8c8c; font-weight: 400;}
+.user_Recommendation .user_Recommendation_info .user_Recommendation_info_button { display: inline-block; vertical-align: middle;}
+.user_Recommendation .user_Recommendation_info .user_Recommendation_info_button button { border: 0; background: 0; color: #0095f6}
+
+#footer .footer_info { margin-bottom: 16px;}
+#footer .footer_info ul { font-size: 0; width: 292px;}
+#footer .footer_info li { color: #c7c7c7; font-size: 11px; font-weight: 400; line-height: 13px; display: inline-block;}
+#footer .footer_info li::after { content: '\00B7'; margin: 0 2px; }
+#footer .footer_info li:last-child::after { content: ''; }
+
+#footer .footer_source { font-size: 11px; font-weight: 400; line-height: 13px; color: #c7c7c7; }
 /* mediaquery */
 @media(max-width : 935px){
   .maincontainer { width: 614px; }
