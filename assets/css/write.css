@@ -1,0 +1,71 @@
+.fa,.fab,.fad,.fal,.far,.fas{
+	font-family: serif;
+}
+
+/* 게시글 타이틀 */
+.write-photoAndDiscription-title > p {
+	font-size: 28px;
+}
+
+/* 사진&설명 */
+.write-photoAndDiscriptionContainer {
+	margin: 20px 0px;
+}
+
+.write-photoAndDiscriptionContainer > div {
+	display: inline-block;
+    height: 300px;
+}
+
+.write-photoContainer {
+    width: 300px;
+    margin-right: 15px;
+    position: relative;
+    
+    background: mediumspringgreen;
+}
+
+.write-addPhotoButton {
+	width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: red;
+    
+    position: absolute;
+    transform: 50%, 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+}
+
+.write-photoContainer > .fa-plus-circle {
+    position: absolute;
+    transform: 50%, 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);	
+    
+	font-size: 30px;
+}
+
+.write-addPhotoButton > .fa-plus {
+	font-size: 30px;
+	font-weight: 300px;
+}
+
+.write-DiscriptionContainer {
+    width: 615px;
+    position: relative;
+    
+    background-color: orange;
+}
+
+.write-DiscriptionContainer > textarea {
+	border-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+    width: 610px;
+    height: 292px;
+    resize: none;
+    
+    position: absolute;
+}
