@@ -1,6 +1,9 @@
-body { background-color: #fafafa; }
+/* 도움용 CSS */
 .container { width: 935px; margin: 0 auto;}
 .clearfix:after { content: ''; display: table; clear: both }
+.helper {display: inline-block; vertical-align: middle;}
+
+body { background-color: #fafafa; }
 
 /* header */
 #header {height: 54px;}
@@ -13,8 +16,37 @@ body { background-color: #fafafa; }
 .h_center .h_center_icon_pos {position: absolute; top: 50%; left: 3% ; transform: translateY(-50%);}
 .h_center .h_center_icon_pos .fa-search { font-size: 14px; color: rgba(var(--f52,142,142,142),1); }
 .h_right { position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
-.h_right li { display: inline-block; margin-left: 22px;}
+.h_right .h_right_icon>li { display: inline-block; margin-left: 22px;}
 .h_right .userImg { width: 22px; height: 22px; border-radius: 50%;}
+
+/* 헤더에 사용되는 모달 */
+.h_right .header_modal_cancell { position: fixed; width: 100vw; height: 100vh; top: -15px; z-index: 2;}
+.h_right .modal_user_background {  top: 40px; right:-27px;}
+.h_right .modal_user_background>.header_modal_user_icon{ width: 14px; height: 14px; transform: rotate(225deg); box-shadow: 1px 1px 0px 1px rgba(var(--jb7,0,0,0),.0975); background: rgba(var(--d87,255,255,255),1); position: absolute; top: -8px; right: 30px;}
+.h_right .modal_user_background .herder_modal_user_list li { width: 197.965px; height: 20.979px; padding: 8px 16px;}
+.h_right .modal_user_background .herder_modal_user_list li .header_modal_user_icon { float: left; margin-right: 12px;}
+.h_right .modal_user_background .herder_modal_user_list li:last-child { border-top: 1px solid rgba(var(--b38,219,219,219),1);}
+
+.h_right .modal_like_background { top: 40px; right: -10px;}
+.h_right .modal_like_background>.header_modal_like_icon { width: 14px; height: 14px; transform: rotate(225deg); box-shadow: 1px 1px 0px 1px rgba(var(--jb7,0,0,0),.0975); background: rgba(var(--d87,255,255,255),1); position: absolute; top: -8px; right: 63px; }
+.h_right .modal_like_background .herder_modal_like_list li { font-size: 0; width: 468px; padding: 12px 16px 13px 12px; position: relative;}
+.h_right .modal_like_background .herder_modal_like_list li:after{ content: ""; border-bottom: 1px solid #dbdbdb; position: absolute; bottom: 0; height: 0; left: 58px; right: 12px;}
+.h_right .modal_like_background .herder_modal_like_list li:last-child:after { width: 0;}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_userImg { width: 34px; height: 34px; display: inline-block; vertical-align: middle;}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_userImg .modal_like_userImg_bg {display: inline-block; border: 1px solid rgb(220,220,220); border-radius: 50%; position: relative; width: 38px; height: 38px;}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_userImg .modal_like_userImg_bg>img { width: 34px; height: 34px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_msg { overflow: hidden; text-overflow: ellipsis; box-sizing: border-box; display: inline-block; width: 370px; margin: 0 12px; font-size: 14px; color: #262626; vertical-align: middle;}
+.h_right .modal_like_background .herder_modal_like_list .follow { width: 348px;}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_msg .modal_like_msg_from { color: #262626; font-weight: 600; font-size: 14px;}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_msg .modal_like_msg_to { color: #00376b; font-size: 14px;}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_postImg { display: inline-block; font-size: 0; vertical-align: middle;}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_postImg img { width: 40px; height: 40px;}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_btn { display: inline-block; vertical-align: middle;}
+.h_right .modal_like_background .herder_modal_like_list .modal_like_btn button { background-color: #0095f6; border: 0; border-radius: 4px; font-size: 14px; font-weight: 600; padding: 5px 9px; color: white;}
+
+/* 모달 공통 */
+.modal { display: none; }
+.modal_background { position: absolute; border: 1px solid white; border-radius: 6px; box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0), .30975); background-color: white; z-index: 3; }
 
 /* mediaquery */
 @media(max-width : 935px){

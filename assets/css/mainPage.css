@@ -42,7 +42,6 @@
 .subcontents { position: fixed; top: 106px;}
 
 /* sub_user_info */
-.sub_user_info .sub_user_content .helper {display: inline-block; vertical-align: middle;}
 .sub_user_info .sub_user_content .sub_user_img { display: inline-block; vertical-align: middle; }
 .sub_user_info .sub_user_img img { width: 56px; height: 56px; border-radius: 50%;}
 .sub_user_info .sub_user_content .sub_user_name { display: inline-block; vertical-align: middle; margin: 0 120px 0 12px;}

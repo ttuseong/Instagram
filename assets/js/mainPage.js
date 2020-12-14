@@ -1,6 +1,7 @@
 // 서브 컨텐츠 위치를 조정할 때 고정으로 필요한 값
 var basicLeft = $(".maincontents").outerWidth(true);
 
+//브라우저가 시작될 때 호출
 $(document).ready(function(){
   subcontentsMove();
 })
@@ -15,5 +16,13 @@ function subcontentsMove(){
   var left = Number($('.maincontainer').css("margin-left").replace('px', '')) + basicLeft;
 
   $('.subcontents').css('left', left+'px');
-  console.log(left);
 }
+
+$(".h_right li").on("click", function(){
+  var target = $(this)
+  console.log(target);
+
+  var id = target.data("id");
+  console.log(id);
+  modal(id, "show");
+})
