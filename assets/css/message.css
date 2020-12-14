@@ -1,0 +1,10 @@
+
+
+
+#mainBody {height:620px;}
+.m_fixed {z-index:auto; width:100%; height:100%; position:fixed; padding:20px;}
+.m_border {height:620px; right:10px; background-color:yellow; position: relative;}
+.left {width:340px; height:100%; background-color:red; position:absolute;}
+.left_top {height:70px; background-color:blue;}
+.left_bottom {height:550px; background-color:pink;}
+.left_n > p{display:inline-block; position: absolute; background-color:green; height:50px; width: 200px;}
