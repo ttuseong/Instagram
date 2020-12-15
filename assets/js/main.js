@@ -86,6 +86,13 @@ $(".modal_cancell_ground").on("click", function(){
     headerTarget = undefined;
   }
 
-
   $(this).parent().css("display", "none");
-})
+});
+
+$(".modalClose").on("click", function(){
+  $(".modal").css("display", "none");
+});
+
+$(".modalOpen").on("click", function(){
+  modal($(this).data("id"), "show");
+});
