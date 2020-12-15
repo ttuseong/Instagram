@@ -51,6 +51,20 @@ body { background-color: #fafafa; }
 .modal_background { position: absolute; border: 1px solid white; border-radius: 6px; box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0), .30975); background-color: white; z-index: 3; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .modal_size { width: 400px;}
 
+/* 사용자 전환 */
+.modal_userChange_top { position: relative;}
+.modal_userChange_top .modal_userChange_text { font-size: 16px; font-weight: 600; height: 42px; line-height: 42px; text-align: center;}
+.modal_userChange_top .modal_userChange_icon { cursor: pointer; position: absolute; right: 15px; top: 50%; transform: translateY(-50%); font-size: 20px;}
+.modal_userChange_center { min-height: 144px; box-sizing: border-box; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
+.modal_userChange_center .modal_userChange_center_content { padding: 8px 16px 8px 10px; position: relative;}
+.modal_userChange_center_content .modal_userChange_center_img { display: inline-block; vertical-align: middle; margin-right: 5px; }
+.modal_userChange_center .modal_userChange_center_img img { width: 56px; height: 56px; border-radius: 50%; }
+.modal_userChange_center_content .modal_userChange_center_text { display: inline-block; vertical-align: middle; font-size: 16px; font-weight: 600; color: #262626}
+.modal_userChange_center_content .modal_userChange_center_icon { display: inline-block; vertical-align: middle; position: absolute; top: 50%; right: 16px; transform: translateY(-50%);}
+.modal_userChange_bottom .modal_userChange_login { color: #0095f6; font-size: 14px; text-align: center; font-weight: 600; height: 50px; line-height: 50px;}
+.modal_userChange_bottom .modal_userChange_login p { cursor: pointer; display: inline-block; }
+/* test */
+.test { display: block;}
 /* mediaquery */
 @media(max-width : 935px){
   .h_left {padding-left: 20px;}
