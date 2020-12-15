@@ -17,3 +17,8 @@ function subcontentsMove(){
 
   $('.subcontents').css('left', left+'px');
 }
+
+//게시글에서 더보기 버튼을 클릭했을 경우
+$(".fa-ellipsis-h").on("click", function(){
+  modal("modal_post_more", "show");
+})
