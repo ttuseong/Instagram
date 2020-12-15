@@ -17,12 +17,3 @@ function subcontentsMove(){
 
   $('.subcontents').css('left', left+'px');
 }
-
-$(".h_right li").on("click", function(){
-  var target = $(this)
-  console.log(target);
-
-  var id = target.data("id");
-  console.log(id);
-  modal(id, "show");
-})

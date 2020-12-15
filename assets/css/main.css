@@ -17,7 +17,9 @@ body { background-color: #fafafa; }
 .h_center .h_center_icon_pos .fa-search { font-size: 14px; color: rgba(var(--f52,142,142,142),1); }
 .h_right { position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
 .h_right .h_right_icon>li { display: inline-block; margin-left: 22px;}
+.h_right .h_right_icon>li:last-child{ position: relative;}
 .h_right .userImg { width: 22px; height: 22px; border-radius: 50%;}
+.h_right .user_bg { position: absolute; border: 1px solid #262626; width: 26px; height: 26px; border-radius: 50%; left: 50%; top: 45%; transform: translate(-50%, -50%);}
 
 /* 헤더에 사용되는 모달 */
 .h_right .header_modal_cancell { position: fixed; width: 100vw; height: 100vh; top: -15px; z-index: 2;}
