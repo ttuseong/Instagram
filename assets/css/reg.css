@@ -1,0 +1,46 @@
+/* main */
+.reg_content { text-align: center; }
+.reg_size { width: 350px; display: inline-block; margin-bottom: 60px; margin-top: 20px;}
+.reg { border: 1px solid #dbdbdb; background-color: #fff; display: inline-block; width: 350px; padding: 23px 40px 42px; box-sizing: border-box; }
+.reg h1 { color: transparent; background-image: url(../images/logo.png);background-size: contain; display: block; height: 65px; width: 180px; margin: 0 auto; }
+.reg .reg_message { color: #8c8c8c; font-size: 17px; font-weight: 600; text-align: center; margin: 7px 0 19px;}
+
+.reg .reg_anotherLog { box-sizing: border-box; width: 268px; height: 32px; font-weight: 600; padding: 5px 9px; background-color: #0095f6; color: #fff; border: 0; border-radius: 4px; }
+.reg .reg_anotherLog span i { color: #fff; width: 16px; height: 16px; }
+.reg .reg_anotherLog p { display: inline-block; }
+
+.reg .reg_or { font-size: 0; margin: 19px 0; }
+.reg .reg_or .reg_or_line { font-size: 16px; display: inline-block; width: 103px; height: 1px; background-color: #dbdbdb; vertical-align: middle; }
+.reg .reg_or .reg_or_text { font-weight: 600; color: #8c8c8c; font-size: 13px; margin: 0 18px; display: inline-block; vertical-align: middle; }
+
+.reg form input { margin-bottom: 6px; box-sizing: border-box; width: 268px; height: 38px; padding: 9px 0 7px 8px; background-color: #fafafa; border: 1px solid rgb(219,219,219); border-radius: 3px;}
+.reg form button { margin-bottom: 21px; border-radius: 4px; border: 0; background-color: rgba(0, 149, 246, .3); width: 268px; height: 30px; box-sizing: border-box; padding: 5px 9px; }
+
+.reg .reg_text { color: #8e8e8e; font-size: 12px; text-align: center;}
+.reg .reg_text a { color: #8e8e8e; font-weight: 600; }
+
+.reg_login { padding: 25px 0; border: 1px solid #dbdbdb; background-color: #fff; margin: 10px 0 22px;}
+
+.reg_app .reg_app_text { margin-bottom: 23px; }
+.reg_app .reg_app_img .reg_app_appstore { display: inline-block; margin-right: 2px; }
+.reg_app .reg_app_img .reg_app_playstore { display: inline-block; }
+.reg_app .reg_app_img img{ width: 160px; height: 40px; }
+
+/* footer */
+footer { display: flex;}
+.reg_footer { width: 100vw; margin-bottom: 106px;}
+
+.reg_footer .reg_footer_top ul { font-size: 0; text-align: center; }
+.reg_footer .reg_footer_top ul li { display: inline-block; font-size: 12px; margin: 0 8px 12px 8px; }
+.reg_footer .reg_footer_top ul li a { color: #8c8c8c;}
+
+.reg_footer .reg_footer_bottom { text-align: center; }
+.reg_footer .reg_footer_bottom .reg_footer_scroll { display: inline-block; }
+.reg_footer .reg_footer_bottom .reg_footer_scroll select { background: 0; border: 0; color: #8c8c8c; outline: none; }
+.reg_footer .reg_footer_bottom .reg_footer_text { display: inline-block; color: #8c8c8c; }
+
+/* mediaquery */
+@media(max-width : 575px){
+  .reg_login { background: 0; border: 0; }
+  .reg { background: 0; border: 0; }
+}
