@@ -44,3 +44,14 @@ footer { display: flex;}
 .login_footer .login_footer_bottom .login_footer_scroll { display: inline-block; }
 .login_footer .login_footer_bottom .login_footer_scroll select { background: 0; border: 0; color: #8c8c8c; outline: none; }
 .login_footer .login_footer_bottom .login_footer_text { display: inline-block; color: #8c8c8c; }
+
+
+/* mediaquery */
+@media(max-width : 935px){
+  .login_left { display: none; }
+}
+
+@media(max-width : 575px){
+  .login_right .login_right_info { background: 0; border: 0; }
+  .login_right .login_right_reg { background: 0; border: 0; }
+}
