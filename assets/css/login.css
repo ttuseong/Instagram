@@ -1,0 +1,46 @@
+.login_content {text-align: center; margin-bottom: 106px;}
+
+.login_left{ vertical-align: top; position: relative; display: inline-block; background-image: url(../images/로그인폰배경.png); width: 454px; height: 618px;}
+.login_left img { vertical-align: top; position: absolute; top: 99px; left: 151px;}
+
+.login_right { margin-top: 32px; display: inline-block; width: 350px; box-sizing: border-box;}
+.login_right .login_right_info { border: 1px solid #dbdbdb; border-radius: 1px; background-color: #fff; padding: 22px 40px 21px; }
+.login_right .login_right_info h1{  color: transparent; background-image: url(../images/logo.png);background-size: contain; display: block; height: 65px; width: 180px; margin: 0 auto; }
+.login_right .login_right_info form { margin-top: 30px; margin-bottom: 19px;}
+.login_right .login_right_info input { margin-bottom: 6px; width: 250px; height: 20px; padding: 9px 8px 7px 8px; background: #fafafa; border: 1px solid rgb(219,219,219); border-radius: 3px; }
+.login_right .login_right_info button { margin-top: 8px; width: 270px; padding: 5px 9px; border: none; border-radius: 4px; background-color: rgba(0,149,246,.3); color: #fff;}
+
+.login_right .login_right_info .login_right_or { font-size: 0px; }
+.login_right .login_right_info .login_right_or .login_or_line { font-size: 16px; display: inline-block; width: 103px; height: 1px; background-color: #dbdbdb; vertical-align: middle;}
+.login_right .login_right_info .login_right_or .login_or_text { font-weight: 600; color: #8c8c8c; font-size: 13px; margin: 0 18px; display: inline-block; vertical-align: middle;}
+
+.login_right .login_right_info .login_right_anotherLog { text-align: center; margin: 31px 0 24px;}
+.login_right .login_right_info .login_right_anotherLog span { margin-right: 2px; }
+.login_right .login_right_info .login_right_anotherLog span i { color: rgb(66,103,178); width: 16px; height: 16px;}
+.login_right .login_right_info .login_right_anotherLog p { display: inline-block; color: #385185; font-weight: 600;}
+.login_right .login_right_info .login_right_search_pw { font-size: 12px; color: #00376b; text-align: center; display: block; }
+
+.login_right .login_right_reg { margin: 10px 0 20px; box-sizing: border-box; padding: 10px 0; background-color: #fff; border: 1px solid #dbdbdb; border-radius: 1px;}
+.login_right .login_right_reg p { height: 48px; line-height: 48px; text-align: center; font-size: 14px;}
+.login_right .login_right_reg p a { color: #0095f6; font-size: 14px; font-weight: 600; }
+
+.login_right .login_right_app .login_right_app_text { text-align: center; font-size: 14px; margin-bottom: 23px;}
+
+.login_right .login_right_app .login_right_app_img { text-align: center;}
+.login_right .login_right_app .login_right_app_img .login_right_app_appstore { display: inline-block; margin-right: 2px;}
+.login_right .login_right_app .login_right_app_img .login_right_app_playstore { display: inline-block;}
+.login_right .login_right_app .login_right_app_img img { width: 160px; height: 40px;}
+
+
+/* footer */
+.login_footer .login_footer_top ul { font-size: 0; text-align: center; }
+.login_footer .login_footer_top ul li { display: inline-block; font-size: 12px; margin: 0 8px 12px 8px; }
+.login_footer .login_footer_top ul li a { color: #8c8c8c;}
+
+
+footer { display: flex;}
+.login_footer { width: 100vw; margin-bottom: 106px;}
+.login_footer .login_footer_bottom { text-align: center; }
+.login_footer .login_footer_bottom .login_footer_scroll { display: inline-block; }
+.login_footer .login_footer_bottom .login_footer_scroll select { background: 0; border: 0; color: #8c8c8c; outline: none; }
+.login_footer .login_footer_bottom .login_footer_text { display: inline-block; color: #8c8c8c; }
