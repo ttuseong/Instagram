@@ -1,0 +1,56 @@
+
+
+
+/*메뉴바*/
+.menuBar{height: 52px;
+		 border-top: 1px solid #dbdbdb;
+		 font-size: 12px;
+		 letter-spacing: 1px;
+		 font-weight: 600;
+		 text-align: center;}
+.menuBar_one{display: inline-block;  margin: -1px 30px 0px 30px; 
+			width: 57px; height: 52px; line-height: 52px; align-items: center; color: #8e8e8e;}
+.menuBar_one.clicked{border-top: 1px solid #262626; color: #262626;}
+.menuBar_icon{display: inline-block;}			
+.menuBar_pic{height: 18px; width: 57px;}
+.munuBar_manuName{ text-align: center;}
+
+/*갤러리*/
+.gallery_line{ width: auto; max-height:293px; height: auto; display:inline-block;}
+.gallery_one{max-width:293px; max-height:293px; width:auto; height:auto; float: left; }
+.gallery_one:last-child{margin-right: 0px;}
+.gallery_item{ max-width:293px; max-height:293px; object-fit:cover;}
+
+.gallery_bookmark{margin: 32px 0 16px 0;}
+.gallery_bookmark_text{font-size: 12px; line-height: 14px; color: #8e8e8e;}
+
+
+/*갤러리에 내용이 없는 경우*/
+.gallery_no{text-align: center;}
+.gallery_no_main_box{height: 380px; display:inline-block; }
+.gallery_no_main_info{padding: 0 20px; height: 100%; text-align: center; display:inline-block;
+                      background-color: white; } 
+.gallery_no_main_info_pic{height: 40px;}
+.gallery_no_main_logo{margin-top: 25px;}
+.gallery_no_main_text_big{font-size: 18px; font-weight: 600;}
+.gallery_no_main_text_small{font-size: 16px; margin-top: 10px;}
+.gallery_no_main{width: 380px; height: 380px; float: left; }
+.gallery_no_main_pic{width: 100%; height: 100%;}
+
+.gallery_no_content{max-width: 350px; margin: 60px 44px; text-align: center; display:inline-block;}
+.gallery_no_content_info{margin: 24px 0;}
+.gallery_no_content_info_text{font-size: 28px; line-height: 32px; margin: -5px 0 -6px;}
+.gallery_no_content_con{margin-bottom: 24px;}
+.gallery_no_content_con_text{font-size: 14px; line-height: 18px;margin: -3px 0 -4px;}
+
+
+/*반응형*/
+@media (min-width: 736px)
+{.gallery_line{margin-bottom: 28px;}
+ .gallery_one { margin-right: 28px;}}
+
+
+@media (min-width: 990px){
+  .gallery_one{max-width:293px; max-height:293px; width: 293px; height: 293px; float: left; }
+  .gallery_item{width:293px;height:293px;}
+}
