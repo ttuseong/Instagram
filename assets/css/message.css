@@ -1,32 +1,150 @@
 #mainBody {padding:20px;}
-.m_border {height:630px; right:10px; background-color:rgba(var(--d87,255,255,255),1); position: relative; border: 1px solid rgb(219,219,219); border-radius: 4px;}
-.left {width:340px; height:100%; background-color:rgba(var(--d87,255,255,255),1); position:absolute; border-bottom: 1px solid rgb(219,219,219);}
-.left_top {height:60px; background-color:rgba(var(--d87,255,255,255),1); padding:0 20px 0 20px;}
-.left_bottom {padding-top:8px;overflow: auto; overflow-x:hidden; height:555px; background-color:rgba(var(--d87,255,255,255),1);border-top: 1px solid rgb(219,219,219);}
+
+/* message 전체 박스 */
+.m_border {
+	height:660px;
+	background-color:rgba(var(--d87,255,255,255),1);
+	position: relative;
+	border: 1px solid rgb(219,219,219);
+	border-radius: 4px;}
+
+
+
+/* 왼쪽 박스 */
+.left { width:340px;
+		height:100%;
+		background-color:rgba(var(--d87,255,255,255),1);
+		position:absolute; border-bottom: 1px solid rgb(219,219,219);}
+
+/* 왼쪽 박스 top */
+.left_top {height:60px;
+		   background-color:rgba(var(--d87,255,255,255),1);
+		   padding:0 20px 0 20px;}
+
+/* 왼쪽 박스 bottom */
+.left_bottom {padding-top:8px;
+			  overflow: auto;
+			  overflow-x:hidden;
+			  height:590px;
+			  background-color:rgba(var(--d87,255,255,255),1);
+			  border-top: 1px solid rgb(219,219,219);}
+
 .left_n {position:relative;background-color:rgba(var(--d87,255,255,255),1); height:60px;}
-.left_si {position:absolute; top:15px;left:90px;height:30px;}
-.left_s {display:inline-block; color: rgba(var(--i1d,38,38,38),1); font-weight:500; font-size: 16px;line-height: 24px; position:relative;}
-.left_i {display:inline-block;}
-.lefet_icon {position:absolute;top:25px; right:10px;}
-.right {height:100%; width:595px; background-color:rgba(var(--d87,255,255,255),1); 
+.left_si {
+	cursor: pointer;
+	position:absolute; 
+	top: 15%;
+    transform: translate(100px, 5px);}
+.left_s {
+	display:inline-block; 
+	color: rgba(var(--i1d,38,38,38),1); 
+	font-weight:500; 
+	font-size: 16px;
+	line-height: 24px; 
+	position:relative;}
+.left_i {
+	display:inline-block;
+	font-size:18px;
+	padding:8px;
+}
+.left_icon {
+	position:absolute;
+	top:15px; 
+	right:-10px;
+	cursor:pointer;}
+.right {height:100%; width:595px; background-color:rgba(var(--d87,255,255,255),1);
 position: absolute; top:0px; left:340px; border-right: 1px solid rgb(219,219,219); border-left: 1px solid rgb(219,219,219);}
-.right_con {height:100%; padding:24px;text-align:center;}
-.right_i {width:96px; height:96px; display:inline-block;}
-.right_m {text-align:center; margin:20px; font-weight: 400; font-size:22px;line-height: 26px;}
-.right_p {text-align:center; margin:-3px 0 -4px; font-size:14px; line-height:18px; font-weight:400; color:rgba(var(--f52,142,142,142),1);}
+/* 오른쪽 이미지만 포함하는 박스 */
+.right_con {height:610px;
+			padding:24px;
+			text-align:center;}
+/* 오른쪽 이미지  */
+.right_i {width:130px;
+		  height:105px;
+		  display:inline-block;
+		  position:relative;
+		  top:30%;
+		  right:1px;}
+.rignt_messageBox {
+	transform: translate(0px, 180px);
+}
+.right_m {
+	margin:25px 20px 10px 20px; 
+	font-weight: 400; 
+	font-size:22px;
+	line-height: 26px;
+	text-align:center;}
+.right_p {margin:-3px 0 10px; font-size:14px; line-height:18px; font-weight:400; color:rgba(var(--f52,142,142,142),1); text-align:center;}
 .right_b {border: 1px solid transparent; background-color: rgba(var(--d69,0,149,246),1);
 border-radius: 4px; color: rgba(var(--eca,255,255,255),1); position:relative;cursor: pointer;
 font-weight: 600; padding: 5px 9px; text-align: center; width:auto; font-size: 14px;line-height: 18px; margin: 20px;}
-.left_mc {padding-top:8px;}
 .item{display: flex; height: 100%; align-items: center; justify-content: center; font-size: 5em;}
-.left_fm {height:60px; width:330px; position:relative;}
-.left_a {width:300px; height:60px; padding:8px;}
-.left_picture {width:250px; height:60px; display:block; position:relative;}
-.left_background {width:60px; height:60px; display:inline-block; border-radius:50%; margin-right:12px;
-background: radial-gradient(circle at bottom left, #F58529 20%, #C42D91);}
-.left_background >span > img {border-radius:50%; transform: translate(2px, -16px);}
-.left_p {width:150px; height:30px;display:inline-block;position: absolute;top:20px; cursor: pointer;}
-.left_name {font-size: 14px;line-height: 16px; font-weight:400;margin: 0!important;} 
-.left_speech {margin: 0!important;font-size:18px;color: rgba(var(--f52,142,142,142),1);}
- .left_p span {display: block; white-space: nowrap;text-overflow: ellipsis;overflow: hidden;
-}
+
+/* 왼쪽 bottom 게시물 전체 크기 */
+.left_fm {height:72px;
+		  width:330px;
+		  position:relative;}
+
+/* 왼쪽 bottom 프로필, 닉네임, 대화내용 */
+.left_a {
+	width:300px;
+	height:60px;
+	padding:8px 20px;}
+
+.left_picture { 
+	font-size: 0px;}
+
+/* 왼쪽 bottom 프로필 기본테두리 */
+
+.left_backgroundNoraml {
+	vertical-align: middle; 
+	font-size: 16px; width:60px; 
+	height:60px; 
+	display:inline-block; 
+	border-radius:50%; 
+	margin-right:12px;}
+
+/* 왼쪽 bottom 프로필 스토리테두리*/
+
+.left_background {
+	width:60px;
+	height:60px; 
+	display:inline-block; 
+	border-radius:50%; 
+	margin-right:12px;
+	background: radial-gradient(circle at bottom left, #F58529 20%, #C42D91);}
+
+.left_pi {position: absolute; border-radius:50%; transform: translate(2px, -16px);}
+.left_p {width:150px; height:30px;display:inline-block;cursor: pointer; vertical-align: middle; font-size: 16px;}
+.left_name {font-size: 14px;line-height: 16px; font-weight:400;margin: 0!important;}
+
+/* 왼쪽 대화상자 고정 길이  */
+.left_sp {
+	font-size:0px;
+	width:225px;
+	height:17px;
+	}
+/* 왼쪽 대화상자 span */
+
+.left_speech { 
+	display: inline-block; 
+	vertical-align: middle; 
+	margin: 0!important; 
+	max-width: 150px;
+	font-size:14px;
+	color: rgba(var(--f52,142,142,142),1);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;}
+
+.left_point { vertical-align: middle; display: inline-block;
+    color: rgba(var(--i1d,38,38,38),1);
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 15px;}
+
+.left_time { 
+	font-size:14px;
+	display: inline-block; 
+	vertical-align: middle;
+	color: rgba(var(--f52,142,142,142),1);}
