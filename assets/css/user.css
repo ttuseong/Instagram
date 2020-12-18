@@ -1,0 +1,194 @@
+.user-profile-basicInfoContainer > div {
+	display: inline-block;
+}
+
+/* 유저 프로필 사진 */
+.user-profile-container {
+    width: 300px;
+    height: 170px;
+    vertical-align: top;
+    
+	position: relative;
+}
+
+.user-profile-background {
+	width: 166px;
+	height: 166px;
+	border: solid 2px #dadadb;
+	border-radius: 50%;
+	
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-profile > img {
+	width: 156px;
+	height: 156px;
+	border-radius: 50%;
+	
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 유저 기본 정보 */
+.user-profile-basicInfo {
+	width: 630px;
+	min-height: 170px;
+	vertical-align: top;
+}
+
+/* 유저 정보 각 div 간격 */
+.user-profile-basicInfo > div,
+.user-userIntroduce > .user-userLink {
+	margin-bottom: 20px;
+}
+
+/* 유저 아이디&관리 */
+.user-idAndSetting {
+	margin-top: 20px;
+}
+
+/* 유저 아이디 */
+.user-userID{
+	display: inline-block;
+	vertical-align: top;
+	margin-right:18px;
+	
+    font-size: 28px;
+    font-family: arial;
+    line-height: 32px;
+}
+
+/* 프로필편집 */
+.user-userProfileEdit {
+	display: inline-block;
+	
+	border: 1px solid #dadadb;
+    border-radius: 4px;
+    width: 85px;
+    height: 30px;
+    display: inline-block;
+    
+    position: relative;
+}
+
+.user-userProfileEdit > p {
+    width: 65px;
+    height: 15px;
+    padding-top: 5px;
+    
+	font-size: 14px;
+	font-weight: 600;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 설정 */
+.user-idAndSetting > .fa-cog {
+	display: inline-block;
+	
+	font-size: 27px;
+	margin: 0px 14px;
+	
+    position: absolute;
+}
+
+/* 게시글&팔로워 */
+.user-postAndFollower > div,
+.user-postAndFollower > div > p {
+	display: inline-block;
+}
+
+.user-postAndFollower > div {
+	margin-right: 25px;
+}
+
+.user-postAndFollower > div > p:nth-child(2) {
+	font-weight: 900;
+}
+
+/* 기본 정보 */
+/* 유저 네임 & 소개 & 링크 문단 간격 */
+.user-userIntroduce > div > p:nth-child(-n+3) {
+	line-height: 23px;
+}
+
+/* 유저 네임 */
+.user-userName > p {
+	font-weight: 600;
+}
+
+/* 링크 */
+.user-userLink > p > a {
+	font-weight: 900;
+	color: #143667;
+}
+
+/* 내가 팔로워 한 사람 중에 해당 유저를 팔로워 한 사람들 */
+.user-associatedUsers > p {
+	color: #8d8d8e;
+	font-size: 12px;
+    font-weight: 500;
+}
+
+/* 하이라이트 */
+.user-highlightSection{
+	margin: 20px 0px;
+}
+
+.user-highlightSection > div {
+	display: inline-block;
+}
+
+.user-highlightContainer {
+    width: 90px;
+    height: 120px;
+	padding: 10px 20px;
+}
+
+/* 하이라이트 대표 썸네일 */
+.user-highlightImgContainer {
+    width: 90px;
+    height: 90px;
+    
+	position: relative;
+}
+
+.user-highlightImg-background {
+    width: 87px;
+    height: 87px;
+	border: solid 1px #dadadb;
+	border-radius: 50%;
+	
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-highlightImg > img {
+    width: 80px;
+    height: 80px;
+	border-radius: 50%;
+	
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 하이라이트 이름 */
+.user-highlightContainer > p{
+    max-width: 90px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+	margin-top: 15px;
+}
