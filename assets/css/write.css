@@ -6,7 +6,9 @@
 	width: 935px;
 }
 
-.write-userTagSection, .write-userLocationSection {
+.write-userTagSection,
+.write-userLocationSection,
+.write-DiscriptionContainer {
 	margin: 20px 0px;
 }
 
@@ -16,35 +18,53 @@
 }
 
 /* 게시글 타이틀 */
-.write-photoAndDiscription-title > p {
+.write-photo-title > p {
 	font-size: 28px;
 }
 
-/* 사진&설명 */
-.write-photoAndDiscriptionContainer {
+/* 사진 */
+.write-photoContainer {
 	margin: 20px 0px;
 }
 
-.write-photoAndDiscriptionContainer > div {
-	display: inline-block;
-    height: 300px;
+.write-photoContainer > div {
+    display: inline-block;
+    
+    height: 298px;
+    margin-right: 15px;
+    box-shadow: 0px 0px 20px #abacad; /* x축, y축, 흐림정도, 색상 */
 }
 
-.write-photoContainer {
-    width: 300px;
-    margin-right: 15px;
+/* 사진 */
+.write-showPhoto {
+	position: relative;	
+}
+
+.write-showPhoto > .fa-times {
+	position: absolute;
+	top: -4.5%;
+    left: -4.5%;
+	
+    font-size: 20px;
+    color: black;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.85);
+    padding: 7px 10px;
+}
+
+.write-showPhoto > img {
+	width: 298px;
+	height: 298px;
+}
+
+/* 사진 추가 버튼 */
+.write-addPhoto {
+    width: 298px;
+    margin-right: 0px!important;
     position: relative;
 }
 
-.write-photoContainer > img {
-	width: 300px;
-	height: 300px;
-	border: 1px solid #2f2e2f;
-	border-radius: 5px;
-	opacity: 0.1;
-}
-
-.write-photoContainer > .fa-plus {
+.write-addPhoto > .fa-plus {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,19 +76,16 @@
     color: #2f2e2f
 }
 
-.write-DiscriptionContainer {
-    width: 613px;
-    position: relative;
+.write-DiscriptionContainer > p {
+    padding: 4px 0px 0px 4px;
 }
-
 .write-DiscriptionContainer > textarea {
 	border-color: rgba(0,0,0,0);
     background-color: rgba(0,0,0,0);
-    width: 610px;
-    height: 292px;
+    width: 929px;
+    height: 100px;
     resize: none;
-    
-    position: absolute;
+    margin-top: 10px;
 }
 
 /* 사람태그&위치 */
