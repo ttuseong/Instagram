@@ -47,9 +47,14 @@
 	margin-bottom: 20px;
 }
 
-/* 유저 아이디&관리 */
-.user-idAndSetting {
+/* 유저 아이디 등등 */
+.user-idAndEtc {
 	margin-top: 20px;
+}
+
+.user-idAndEtc > p,
+.user-idAndEtc > div {
+	display: inline-block;
 }
 
 /* 유저 아이디 */
@@ -63,8 +68,15 @@
     line-height: 32px;
 }
 
-/* 프로필편집 */
-.user-userProfileEdit {
+/* 유저 프로필편집, 팔로우 여부, 메시지 보내기 등의 div 간격 */
+.user-myProfile > div,
+.user-followingProfile > div,
+.user-otherProfile > div {
+	margin-right: 5px;
+}
+
+/* 프로필편집, 메시지 보내기, 팔로우, 팔로우 옆에 붙은 버튼 */
+.user-userProfileEdit, .user-sendMessage, .user-userFollow, .user-addFollow, .user-addFollowEtc {
 	display: inline-block;
 	
 	border: 1px solid #dadadb;
@@ -76,13 +88,16 @@
     position: relative;
 }
 
-.user-userProfileEdit > p {
+.user-userProfileEdit > p,
+.user-sendMessage > p,
+.user-addFollow > p {
     width: 65px;
     height: 15px;
-    padding-top: 5px;
+    padding-top: 4px;
     
 	font-size: 14px;
 	font-weight: 600;
+	text-align: center;
     
     position: absolute;
     top: 50%;
@@ -91,13 +106,70 @@
 }
 
 /* 설정 */
-.user-idAndSetting > .fa-cog {
+.user-myProfile > .fa-cog{
 	display: inline-block;
 	
 	font-size: 27px;
-	margin: 0px 14px;
+	margin: 0px 10px;
 	
     position: absolute;
+}
+
+/* 메시지 보내기 */
+.user-sendMessage {
+	width: 97px;
+}
+
+.user-sendMessage > p {
+	width: 77px;
+}
+
+/* 팔로우 여부 */
+.user-userFollow {
+	width: 74px;
+	position: relative;
+}
+
+.user-userFollow > .fa-user-check,
+.user-addFollowEtc > .fa-caret-down,
+.user-userEtcButton > .fa-ellipsis-h,
+.user-FollowingUserEtcButton > .fa-ellipsis-h{
+	font-size: 13px;
+	
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 팔로우 하기 */
+.user-addFollow {
+	width: 86px;
+	background-color: #0095f6;	
+	border: none;
+}
+
+.user-addFollow > p,
+.user-addFollowEtc > .fa-caret-down {
+	color: white;
+}
+
+/* 팔로우 옆에 붙은 버튼 */
+.user-addFollowEtc {
+	width: 34px;
+	background-color: #0095f6;	
+	border: none;
+}
+
+/* etc */
+.user-userEtcButton,
+.user-FollowingUserEtcButton {
+	display: inline-block;
+	
+	height: 30px;
+	margin: 0px 10px;
+	
+    position: relative;
 }
 
 /* 게시글&팔로워 */
