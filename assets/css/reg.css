@@ -28,7 +28,7 @@
 
 /* footer */
 footer { display: flex;}
-.reg_footer { width: 100vw; }
+.reg_footer { width: 100vw;}
 
 .reg_footer .reg_footer_top ul { font-size: 0; text-align: center; }
 .reg_footer .reg_footer_top ul li { display: inline-block; font-size: 12px; margin: 0 8px 12px 8px; }
