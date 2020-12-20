@@ -34,7 +34,7 @@
 
 /* footer */
 footer { display: flex;}
-.login_footer { width: 100vw; margin-bottom: 106px;}
+.login_footer { width: 100vw; }
 
 .login_footer .login_footer_top ul { font-size: 0; text-align: center; }
 .login_footer .login_footer_top ul li { display: inline-block; font-size: 12px; margin: 0 8px 12px 8px; }
