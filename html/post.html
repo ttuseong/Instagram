@@ -193,25 +193,31 @@
             <!--갤러리-->
             <div class="gallery">
 
-              <!--1.내계정 게시물 없음-->
+              <!--1.내계정 게시물 없음
               
-
+              <div class="gallery_no_main">
+                <div class="gallery_no_main_pic"> 
+                  <img class="gallery_no_main_pic_pic" src="../assets/images/nopic1.jpg">
+              </div>
+              
                 <div class="gallery_no_main_box">
                   <div class="gallery_no_main_info">
-                    <h2 class="gallery_no_main_text_big">소중한 순간을 포착하여 공유해보세요.</h2>
-                    <h3 class="gallery_no_main_text_small">앱을 다운로드하고 첫 사진이나 동영상을 공유해보세요.</h3>
-                    <div class="gallery_no_main_logo"> 
-                      <a><img class="gallery_no_main_info_pic" src="../assets/images/nopic2.png"/></a>
-                      <a><img class="gallery_no_main_info_pic" src="../assets/images/nopic3.png"/></a>
-                    </div>
+                    <div class="gallery_no_main_info_box">
+                      <h2 class="gallery_no_main_text_big">소중한 순간을 포착하여 공유해보세요.</h2>
+                      <h3 class="gallery_no_main_text_small">앱을 다운로드하고 첫 사진이나 동영상을 공유해보세요.</h3>
+                      <div class="gallery_no_main_logo"> 
+                        <a target="_blank" href="https://apps.apple.com/app/instagram/id389801252?vt=li">
+                          <img class="gallery_no_main_info_pic" src="../assets/images/nopic2.png"/></a>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DprofilePage%26ig_mid%3D4E87E08D-5723-455B-9D58-937C587D6490%26utm_content%3Dli%26utm_medium%3Dbadge">
+                          <img class="gallery_no_main_info_pic" src="../assets/images/nopic3.png"/></a>
+                      </div>
+                   </div>
                   </div>
               </div>
                 
-                <div class="gallery_no_main"> 
-                    <img class="gallery_no_main_pic" src="../assets/images/nopic1.jpg">
-                </div>
                 
-
+              </div>
+              -->
               
             
 
@@ -231,9 +237,9 @@
           -->
 
 
-             <!--3.게시물 올린게 있음
+             <!--3.게시물 올린게 있음-->
               <div class="gallery_line">
-                <div class="gallery_one">
+                <div class="gallery_one modalOpen" data-id="gallery_open">
                   <img class="gallery_item" src="../assets/images/testImg4.jpg"/>
                 </div>
                 <div class="gallery_one">
@@ -264,8 +270,16 @@
                   <img class="gallery_item" src="../assets/images/testImg6.jpg"/>
                 </div>
               </div>
-            -->
+          </div>
 
+          <div class="modal" id="gallery_open">
+            <div class="modal_cancell_ground">
+              <div class="modal_background">
+                          <div class="post_modal">
+                              아이우에오
+                          </div>
+                    </div>
+                  </div>
           </div>
 
           <!--갤러리-->
@@ -277,20 +291,20 @@
 
 
   
-	<footer id="footer">
-              <div class="footer_info">
-                <ul>
+	<footer id="footer" class="post_footer">
+              <div class="post_footer_info">
+                <ul >
                   <li>소개</li>
-                  <li>도움말</li>
-                  <li>홍보 센터</li>
-                  <li>API</li>
+                  <li>블로그</li>
                   <li>채용 정보</li>
+                  <li>도움말</li>
+                  <li>API</li>
                   <li>개인정보처리방침</li>
                   <li>약관</li>
                   <li>위치</li>
                   <li>인기 계정</li>
                   <li>해시태그</li>
-                  <li>언어</li>
+                  <li>위치</li>
                 </ul>
               </div>
               <span class="footer_source">© 2020 INSTAGRAM FROM FACEBOOK</span>

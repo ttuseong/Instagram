@@ -19,7 +19,7 @@
 .gallery_line{ width: auto; max-height:293px; height: auto; display:inline-block;}
 .gallery_one{max-width:293px; max-height:293px; width:auto; height:auto; float: left; }
 .gallery_one:last-child{margin-right: 0px;}
-.gallery_item{ max-width:293px; max-height:293px; object-fit:cover;}
+.gallery_item{ max-width:293px; max-height:293px;}
 
 .gallery_bookmark{margin: 32px 0 16px 0;}
 .gallery_bookmark_text{font-size: 12px; line-height: 14px; color: #8e8e8e;}
@@ -27,15 +27,16 @@
 
 /*갤러리에 내용이 없는 경우*/
 .gallery_no{text-align: center;}
-.gallery_no_main_box{height: 380px; display:inline-block; }
-.gallery_no_main_info{padding: 0 20px; height: 100%; text-align: center; display:inline-block;
-                      background-color: white; } 
+.gallery_no_main{display: flex;}
+.gallery_no_main_box{max-height: 380px; height: 100%; width: 100%; display:inline-block; background-color: white;}
+.gallery_no_main_info{padding: 0 20px; text-align: center; }
+.gallery_no_main_info_box{ margin-top: 30%;}  
 .gallery_no_main_info_pic{height: 40px;}
 .gallery_no_main_logo{margin-top: 25px;}
 .gallery_no_main_text_big{font-size: 18px; font-weight: 600;}
 .gallery_no_main_text_small{font-size: 16px; margin-top: 10px;}
-.gallery_no_main{width: 380px; height: 380px; float: left; }
-.gallery_no_main_pic{width: 100%; height: 100%;}
+.gallery_no_main_pic{max-width: 380px; max-height: 380px;  }
+.gallery_no_main_pic_pic{width: 100%; height: 100%;}
 
 .gallery_no_content{max-width: 350px; margin: 60px 44px; text-align: center; display:inline-block;}
 .gallery_no_content_info{margin: 24px 0;}
@@ -43,11 +44,25 @@
 .gallery_no_content_con{margin-bottom: 24px;}
 .gallery_no_content_con_text{font-size: 14px; line-height: 18px;margin: -3px 0 -4px;}
 
+/*모달*/
+.post_modal{margin: auto; max-width: 935px; width: 100%;}
+
+
+/*푸터*/
+.post_footer{text-align: center; margin: 16px 0;}
+.post_footer_info{margin-bottom: 5px;}
+.post_footer_info ul { font-size: 0; width: 100%;}
+.post_footer_info li { color: #c7c7c7; font-size: 13px; font-weight: 400; line-height: 13px; display: inline-block;}
+.post_footer_info li::after { content: '\00B7'; margin: 0 2px; }
+.post_footer_info li:last-child::after { content: ''; }
+
 
 /*반응형*/
 @media (min-width: 736px)
 {.gallery_line{margin-bottom: 28px;}
- .gallery_one { margin-right: 28px;}}
+ .gallery_one { margin-right: 28px;}
+ .gallery_no_main_box{height: 380px;}
+}
 
 
 @media (min-width: 990px){
