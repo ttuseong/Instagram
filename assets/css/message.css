@@ -1,5 +1,7 @@
 #mainBody {padding:20px;}
 
+
+
 /* message 전체 박스 */
 .m_border {
 	height:660px;
@@ -11,15 +13,16 @@
 
 
 /* 왼쪽 박스 */
-.left { width:340px;
+.left { width:350px;
 		height:100%;
 		background-color:rgba(var(--d87,255,255,255),1);
-		position:absolute; border-bottom: 1px solid rgb(219,219,219);}
+		position:absolute; 
+		}
 
 /* 왼쪽 박스 top */
 .left_top {height:60px;
-		   background-color:rgba(var(--d87,255,255,255),1);
-		   padding:0 20px 0 20px;}
+		   width:100%;
+		   }
 
 /* 왼쪽 박스 bottom */
 .left_bottom {padding-top:8px;
@@ -29,12 +32,13 @@
 			  background-color:rgba(var(--d87,255,255,255),1);
 			  border-top: 1px solid rgb(219,219,219);}
 
-.left_n {position:relative;background-color:rgba(var(--d87,255,255,255),1); height:60px;}
+.left_n {position:relative;
+		 padding: 10px 20px;
+		 }
 .left_si {
 	cursor: pointer;
-	position:absolute; 
-	top: 15%;
-    transform: translate(100px, 5px);}
+	text-align:center;
+}
 .left_s {
 	display:inline-block; 
 	color: rgba(var(--i1d,38,38,38),1); 
@@ -50,12 +54,97 @@
 .left_icon {
 	position:absolute;
 	top:15px; 
-	right:-10px;
+	right:20px;
 	cursor:pointer;}
-.right {height:100%; width:595px; background-color:rgba(var(--d87,255,255,255),1);
-position: absolute; top:0px; left:340px; border-right: 1px solid rgb(219,219,219); border-left: 1px solid rgb(219,219,219);}
-/* 오른쪽 이미지만 포함하는 박스 */
-.right_con {height:610px;
+.right {height:100%; 
+		width:582px; 
+		background-color:rgba(var(--d87,255,255,255),1);
+		position: absolute; 
+		top:0px; 
+		left:350px; 
+		 
+		border-left: 1px solid rgb(219,219,219);}
+
+/* 오른쪽 메세지 대화 박스 */
+.right_talk {height:100%;					
+}
+.right_top {width:100%;
+			height:60px;
+			border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+
+.right_n {
+		  position:relative;
+		  padding:10px 20px 10px 20px;
+}
+.rignt_nickName {display: inline-block;
+    			 align-items: center;
+    			 margin-left: 8px;
+    			 height: 40px;
+}
+				
+.right_pi {display:inline-block;}
+
+.rignt_span {	position:relative;
+				top:7px;
+				display:inline-block;
+				width:24px;
+				height:24px;}
+				
+.rignt_span img {width:100%;
+				height:100%;
+				border-radius:50%;}
+			
+.rignt_name {display:inline-block;
+			margin-left: 8px;}			
+
+.right_info {display:inline-block;
+			 font-size:24px;
+			 position:absolute;
+			 top:15px;
+			 right:20px;}
+			 
+/* 오른쪽 채팅 박스 */
+.right_bottom {
+	padding-top: 8px;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 507px;
+    background-color: rgba(var(--d87,255,255,255),1);
+}
+/* 오른쪽 이모티콘 박스 */
+.right_imotion {
+	width:100%;
+	height:80px;
+}
+
+.right_imoCon {padding:20px;}
+
+.right_imoBox {min-height:42px;
+	border:1px solid rgba(var(--b6a,219,219,219),1);
+	border-radius:25px;
+	padding-left: 11px;
+    padding-right: 8px;
+}			 
+.right_smile {display:inline-block;
+			  font-size:25px;
+			  cursor: pointer;
+			  padding:8px;
+}
+
+.right_chating {display:inline-block;
+				height:34px;}
+.right_chating > textarea {
+	resize: none;
+	height:18px;
+	border:0;
+	padding: 8px 9px;
+}
+
+
+/* 오른쪽 메세지 보내기 박스 */
+.right_messageSend {display: none;
+			height:610px;
 			padding:24px;
 			text-align:center;}
 /* 오른쪽 이미지  */
@@ -107,7 +196,8 @@ font-weight: 600; padding: 5px 9px; text-align: center; width:auto; font-size: 1
 /* 왼쪽 bottom 프로필 스토리테두리*/
 
 .left_background {
-	width:60px;
+	vertical-align: middle; 
+	font-size: 16px; width:60px; 
 	height:60px; 
 	display:inline-block; 
 	border-radius:50%; 
