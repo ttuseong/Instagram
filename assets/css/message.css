@@ -85,15 +85,16 @@
 				
 .right_pi {display:inline-block;}
 
-.rignt_span {	position:relative;
-				top:7px;
-				display:inline-block;
-				width:24px;
-				height:24px;}
+.rignt_span {position:relative;
+			 top:7px;
+			 display:inline-block;
+			 width:24px;
+			 height:24px;}		 			 
 				
 .rignt_span img {width:100%;
 				height:100%;
 				border-radius:50%;}
+						
 			
 .rignt_name {display:inline-block;
 			margin-left: 8px;}			
@@ -106,11 +107,12 @@
 			 
 /* 오른쪽 채팅 박스 */
 .right_bottom {
-	padding-top: 8px;
+	padding:8px 20px 0px;
     overflow: auto;
     overflow-x: hidden;
     height: 507px;
     background-color: rgba(var(--d87,255,255,255),1);
+    
 }
 /* 오른쪽 이모티콘 박스 */
 .right_imotion {
@@ -118,9 +120,12 @@
 	height:80px;
 }
 
+.m_imotion {float:right}
 .right_imoCon {padding:20px;}
 
-.right_imoBox {min-height:42px;
+.right_imoBox {
+	font-size:0;
+	max-height:42px;
 	border:1px solid rgba(var(--b6a,219,219,219),1);
 	border-radius:25px;
 	padding-left: 11px;
@@ -130,17 +135,108 @@
 			  font-size:25px;
 			  cursor: pointer;
 			  padding:8px;
+			  vertical-align:top
 }
 
 .right_chating {display:inline-block;
-				height:34px;}
-.right_chating > textarea {
-	resize: none;
-	height:18px;
-	border:0;
-	padding: 8px 9px;
+				width: 380px;
+    			height: 34px;
 }
 
+.right_chating > textarea {
+	resize: none;
+	width:380px;
+	height:18px;
+	border:0;
+	padding:8px;
+	outline:none;
+	font-size:14px;
+    line-height: 18px;
+}
+
+.r_dataContent {
+				margin: 4px 0 24px 0;
+}
+
+.r_data {
+	text-align:center;
+	font-size:12px;
+	color: rgba(var(--f52,142,142,142),1);
+}
+
+/* 오른쪽 말풍선 */
+
+.r_rightSpeech {
+	 margin-bottom: 8px;
+	 float:right;
+	 clear:both; 
+}
+
+.r_mi {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-40px, -10px);
+    margin: 0 auto;
+}
+
+.r_rS {
+	position:relative;
+	display:inline-block;
+	padding:16px;
+	font-size:14px;
+	max-width:200px;
+	line-height: 1.2;
+	border:1px solid transparent;
+	border-radius:20px;
+	background-color:#EFEFEF;
+}
+
+
+/* 왼쪽 말풍선 */
+
+
+.r_leftSpeech {
+	 margin-bottom: 8px;
+	 float:left;
+	 clear:both; 
+}
+
+.rignt_ls {position:relative;
+		   top:20px;
+		   display:inline-block;
+		   width:24px;
+		   height:24px;}
+			 
+.right_lsi {width:100%;
+			height:100%;
+			border-radius:50%;}
+
+.l_rS	{
+	position:relative;
+	display:inline-block;
+	padding:16px;
+	font-size:14px;
+	max-width:200px;
+	line-height: 1.2;
+	border:1px solid #EFEFEF;
+	border-radius:20px;
+	background-color: rgba(var(--d87,255,255,255),1);
+}
+
+.l_mi {
+	position: absolute;
+    display: inline-block;
+    top: 50%;
+    right: -45px;
+    transform: translate(-20px, -10px);
+    margin: 0 auto;
+}
+
+/* 메세지 설정 세개점 */
+.m_ellipsis-h {
+	color:#8E8E8E;
+}			
 
 /* 오른쪽 메세지 보내기 박스 */
 .right_messageSend {display: none;
