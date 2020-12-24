@@ -50,8 +50,8 @@ body { background-color: #fafafa; height: 100%; padding-top: 54px; box-sizing: b
 
 /* 모달 공통 */
 .modal { display: none; }
-.modal_cancell_ground { background-color: rgba(0,0,0,.65); position: fixed; ; z-index: 2; top: 0; bottom: 0; left: 0; right: 0; }
-.modal_background { position: absolute; border: 1px solid white; border-radius: 6px; box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0), .30975); background-color: white; z-index: 3; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.modal_cancell_ground { background-color: rgba(0,0,0,.65); position: fixed; ; z-index: 55; top: 0; bottom: 0; left: 0; right: 0; }
+.modal_background { position: absolute; border: 1px solid white; border-radius: 6px; box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0), .30975); background-color: white; z-index: 80; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .modal_size { width: 400px;}
 
 /* 사용자 전환 */
@@ -106,8 +106,10 @@ body { background-color: #fafafa; height: 100%; padding-top: 54px; box-sizing: b
 .postContent_right_bottom .postContent_right_bottom_contentInfo .postContent_right_bottom_right_icon { position: absolute; top: 12px; right: 15px;}
 .postContent_right_bottom .postContent_right_bottom_contentInfo .postContent_right_bottom_liked { color: #262626; font-weight: 600; font-size: 14px; margin-top: 7px; margin-bottom: 12px; }
 .postContent_right_bottom .postContent_right_bottom_contentInfo .postContent_right_bottom_time { font-size: 10px; color: #8e8e8e; }
-.postContent_right_bottom .postContent_right_bottom_comment { height: 56px;}
-.postContent_right_bottom .postContent_right_bottom_comment textarea { height: 100%; width: 335px; box-sizing: border-box;}
+.postContent_right_bottom .postContent_right_bottom_comment { position: relative; height: 56px;}
+.postContent_right_bottom .postContent_right_bottom_comment textarea {border: 0; height: 18px; line-height: 23px; padding:18px 46px 0px  16px; resize: none; height: 100%; width: 335px; box-sizing: border-box;}
+.postContent_right_bottom .postContent_right_bottom_comment textarea:focus { outline: none; }
+.postContent_right_bottom .postContent_right_bottom_comment button { position: absolute; top: 50%; transform: translateY(-50%); right: 17px; border: 0; background: 0; color: #0095f6; opacity: .3; font-size: 14px; font-weight: 600;}
 /* test */
 .test { display: block;}
 

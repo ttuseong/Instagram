@@ -86,6 +86,7 @@ $(".modal_cancell_ground").on("click", function(){
     headerTarget = undefined;
   }
 
+  $('html').css('overflow', 'auto');
   $(this).parent().css("display", "none");
 });
 
@@ -94,5 +95,11 @@ $(".modalClose").on("click", function(){
 });
 
 $(".modalOpen").on("click", function(){
+  $('html').css('overflow', 'hidden');
   modal($(this).data("id"), "show");
 });
+
+
+$('span[data-id="postContent"]').on("click", function(){
+
+})
