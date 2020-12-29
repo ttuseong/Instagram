@@ -18,12 +18,14 @@
 
 /*갤러리*/
 .gallery_line{ max-width: 935px; max-height:293px; width: 100%;  height: 100%; display:flex; margin-bottom: 28px;}
-.gallery_one{max-width: 293px; max-height:293px; width: 33.3%; float: left;  margin-right: 28px;}
+.gallery_one{max-width: 293px; max-height:293px;  margin-right: 28px;}
 .gallery_one:last-child{margin-right: 0px;}
 .gallery_item{max-width: 293px; max-height:293px; width: 100%;height:100%;}
-
+.gallery_item:hover{ filter: brightness(40%);}
 .gallery_bookmark{margin: 32px 0 16px 0;}
 .gallery_bookmark_text{font-size: 12px; line-height: 14px; color: #8e8e8e;}
+
+
 
 /*갤러리에 내용이 없는 경우*/
 .gallery_no{text-align: center;}
