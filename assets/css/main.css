@@ -1,5 +1,6 @@
 /* 도움용 CSS */
 .container { width: 935px; margin: 0 auto;}
+.clearfix { overflow: auto; }
 .clearfix:after { content: ''; display: table; clear: both }
 .helper {display: inline-block; vertical-align: middle;}
 .modalOpen{ cursor: pointer;}
