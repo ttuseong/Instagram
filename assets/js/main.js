@@ -96,6 +96,9 @@ $(".modalClose").on("click", function(){
 
 $(".modalOpen").on("click", function(){
   $('html').css('overflow', 'hidden');
+  var scroll = $(document).scrollTop();
+  var text = 'calc(50% + ' + scroll  + 'px)';
+  $('.modal_background ').css('top', text);
   modal($(this).data("id"), "show");
 });
 
