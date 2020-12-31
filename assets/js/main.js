@@ -40,7 +40,7 @@ function preventClick(e) {
 //헤더에 사용되는 모달
 //모달의 위치 변경
 function headerModalCancellPos(){
-  var leftPost = 242.5 + Number($('.maincontainer').css("margin-left").replace('px', '')) - $(".header_modal_cancell").width();
+  var leftPost = 242.5 + Number($('.container').css("margin-left").replace('px', '')) - $(".header_modal_cancell").width();
   $(".header_modal_cancell").css("left", leftPost+'px');
 }
 
