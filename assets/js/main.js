@@ -96,9 +96,21 @@ $(".modalClose").on("click", function(){
 
 $(".modalOpen").on("click", function(){
   $('html').css('overflow', 'hidden');
+
   var scroll = $(document).scrollTop();
   var text = 'calc(50% + ' + scroll  + 'px)';
   $('.modal_background ').css('top', text);
+
+  console.log($(this).data("id"))
+
+  if($(this).data("id") == "postContent"){
+    console.log($(".postContent_size").height());
+    console.log($(".modal_size_cancel").height());
+    console.log($(".postContent_left").height());
+    console.log($(".postContent_left_size").height());
+    console.log($(".postContent_left_content").height());
+  }
+
   modal($(this).data("id"), "show");
 });
 
