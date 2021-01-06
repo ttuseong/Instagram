@@ -30,6 +30,15 @@ $(document).ready(function(){
 //브라우저의 크기 변경시 호출
 $(window).resize(function(){
   headerModalCancellPos();
+  if($(window).width() < 1015 && $(window).width() > 735){
+    var leftSize = 600 - (1015 - $(window).width());
+    var rightHeight = leftSize - 65 - 150;
+
+    $(".postContent_left_size").height(leftSize);
+    $(".postContent_left_size").width(leftSize);
+    $('.postContent_left_size').css('line-height', leftSize + 'px');
+    $(".postContent_right_middle").height(rightHeight);
+  }
 });
 
 //클릭 이벤트를 막는 함수
@@ -101,20 +110,5 @@ $(".modalOpen").on("click", function(){
   var text = 'calc(50% + ' + scroll  + 'px)';
   $('.modal_background ').css('top', text);
 
-  console.log($(this).data("id"))
-
-  if($(this).data("id") == "postContent"){
-    console.log($(".postContent_size").height());
-    console.log($(".modal_size_cancel").height());
-    console.log($(".postContent_left").height());
-    console.log($(".postContent_left_size").height());
-    console.log($(".postContent_left_content").height());
-  }
-
   modal($(this).data("id"), "show");
 });
-
-
-$('span[data-id="postContent"]').on("click", function(){
-
-})

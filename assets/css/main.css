@@ -121,6 +121,12 @@ body { background-color: #fafafa; height: 100%; padding-top: 54px; box-sizing: b
   .container { width: 100%;}
 }
 
+@media(max-width : 735px) {
+  .modal_size { width: 260px; }
+  .postContent_size { width: auto; }
+  .postContent_right { display: none; }
+}
+
 @media(max-width : 575px){
   .h_center { display: none;}
 }
