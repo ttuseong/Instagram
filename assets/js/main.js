@@ -30,15 +30,6 @@ $(document).ready(function(){
 //브라우저의 크기 변경시 호출
 $(window).resize(function(){
   headerModalCancellPos();
-  if($(window).width() < 1015 && $(window).width() > 735){
-    var leftSize = 600 - (1015 - $(window).width());
-    var rightHeight = leftSize - 65 - 150;
-
-    $(".postContent_left_size").height(leftSize);
-    $(".postContent_left_size").width(leftSize);
-    $('.postContent_left_size').css('line-height', leftSize + 'px');
-    $(".postContent_right_middle").height(rightHeight);
-  }
 });
 
 //클릭 이벤트를 막는 함수

@@ -71,13 +71,13 @@ body { background-color: #fafafa; height: 100%; padding-top: 54px; box-sizing: b
 /* 사용자 게시글 */
 .postContent_size { max-width: 935px; width: 100%; border: none; border-radius: 0;}
 .modal_size_cancel { width: auto; font-size: 0;}
-.postContent_left { display: inline-block;}
-.postContent_left .postContent_left_size { width: 600px; height: 600px; line-height: 600px; background-color: black; }
+.postContent_left { display: inline-block; width: calc(100% - 335px); }
+.postContent_left .postContent_left_size {  line-height: 600px; background-color: black; }
 .postContent_left .postContent_left_size .postContent_left_content { width: 100%; height: 100%; }
 .postContent_left .postContent_left_size img { width: 100%; vertical-align: middle;}
 
 
-.postContent_right{ display: inline-block; vertical-align: top; }
+.postContent_right{ height: 600px; display: inline-block; vertical-align: top; }
 .postContent_right .postContent_right_top { position: relative; width: 335px; padding: 16px; border-bottom: 1px solid #efefef; box-sizing: border-box;}
 .postContent_right .postContent_right_top .postContent_right_top_img { margin-right: 14px; display: inline-block; vertical-align: middle; }
 .postContent_right .postContent_right_top .postContent_right_top_img img { width: 32px; height: 32px; border-radius: 50%; }
@@ -87,7 +87,7 @@ body { background-color: #fafafa; height: 100%; padding-top: 54px; box-sizing: b
 .postContent_right .postContent_right_top .postContent_right_top_user p button {margin-left: 3px; background: 0; border: 0; font-size: 14px; font-weight: 600; display: inline-block; vertical-align: middle; padding: 0}
 .postContent_right .postContent_right_top .postContent_right_top_icon {position: absolute; top: 50%; right: 17px; transform: translateY(-50%);font-size: 16px; display: inline-block; vertical-align: middle; }
 
-.postContent_right .postContent_right_middle { overflow: scroll; font-size: 16px; height: 378px; border-bottom: 1px solid #efefef; border-left: 1px solid #efefef;padding-left: 12px; -ms-overflow-style: none;scrollbar-width: none; }
+.postContent_right .postContent_right_middle { overflow: scroll; font-size: 16px; height: calc(100% - 215px); border-bottom: 1px solid #efefef; border-left: 1px solid #efefef;padding-left: 12px; -ms-overflow-style: none;scrollbar-width: none; }
 .postContent_right .postContent_right_middle::-webkit-scrollbar { display: none; }
 .postContent_right_middle_content { margin-top: 25px; }
 .postContent_right_middle_content:last-child{ margin-bottom: 20px;}
@@ -123,8 +123,9 @@ body { background-color: #fafafa; height: 100%; padding-top: 54px; box-sizing: b
 
 @media(max-width : 735px) {
   .modal_size { width: 260px; }
-  .postContent_size { width: auto; }
+  .modal_size_cancel { width: auto; }
   .postContent_right { display: none; }
+  .postContent_left { width: 100%; }
 }
 
 @media(max-width : 575px){
