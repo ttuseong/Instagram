@@ -277,7 +277,6 @@
 
 /********************** 상세 정보 *************************/
 .right_information {
-	display:none;
 	position: absolute;
     height: 100%;
     width: 100%;
@@ -402,7 +401,7 @@ input[type="checkbox"]:checked + label:after {
 /* 오른쪽 메세지 보내기 박스 */
 
 .right_messageSend {
-	
+	display:none;
 	height:610px;
 	padding:24px;
 	text-align:center;
