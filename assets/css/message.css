@@ -75,7 +75,9 @@
 /******************** 오른쪽 메세지 대화 박스 ***********************/
 .right_talk {
 	display:none;
+	position:absolute;
 	height:100%;
+	width:100%;
 }
 .right_top {
 	width:100%;
@@ -275,7 +277,10 @@
 
 /********************** 상세 정보 *************************/
 .right_information {
-	height:100%;
+	display:none;
+	position: absolute;
+    height: 100%;
+    width: 100%;
 }
 .right_ip {
 	padding: 0 20px;
@@ -397,7 +402,7 @@ input[type="checkbox"]:checked + label:after {
 /* 오른쪽 메세지 보내기 박스 */
 
 .right_messageSend {
-	display: none;
+	
 	height:610px;
 	padding:24px;
 	text-align:center;
