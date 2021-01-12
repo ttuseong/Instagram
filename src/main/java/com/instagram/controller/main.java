@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/")
-public class test {
-	@RequestMapping("/test")
-	public String test() {
-		return "test";
+public class main {
+	@RequestMapping("/main")
+	public String main() {
+		return "index";
 	}
 }
