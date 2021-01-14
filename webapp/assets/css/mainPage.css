@@ -18,8 +18,13 @@
 .post .article_user_pos span { margin-left: 15px;}
 .post .article_more_pos .fa-ellipsis-h { cursor: pointer; position: absolute; top: 50%; right: 16px; transform: translateY(-50%);}
 
-.post .article_img { display: flex; box-sizing: border-box; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
-.post .article_img img {width: 100%;}
+.post .article_img { position: relative; overflow: hidden; box-sizing: border-box; border-top: 1px solid #dbdbdb; border-bottom: 1px solid #dbdbdb;}
+.post .article_img .article_img_size { transition: all 0.3s ease-in-out; width: 1842px; font-size: 0; margin-left:0;}
+.post .article_img img {width: 614px; display: inline-block;}
+.post .article_img .article_img_leftArrow { position: absolute; font-size: 20px; display: inline-block; width: 20px; height: 20px; border-radius: 50%; text-align: center; top: 50%; left: 10px; background-color: rgba(255,255,255,0.5); }
+.post .article_img .article_img_leftArrow:hover{cursor: pointer;}
+.post .article_img .article_img_rightArrow { position: absolute; font-size: 20px; display: inline-block; width: 20px; height: 20px; border-radius: 50%; text-align: center; top: 50%; right: 10px; background-color: rgba(255,255,255,0.5); }
+.post .article_img .article_img_rightArrow:hover{cursor: pointer;}
 
 .post .article_icons{position: relative; height: 40px;}
 .post .article_icons .left_icon { display: inline-block; position: absolute; left: 16px; top: 50%; transform: translateY(-50%);}

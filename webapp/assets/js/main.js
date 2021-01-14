@@ -61,6 +61,23 @@ $(".h_right li").on("click", function(){
   modal(id, "show");
 })
 
+// 슬라이드
+$(".btn_left").on("click", function(){
+  var imgSize = $(this).parent().parent().width();
+  var movePos = Math.ceil(Number($(this).parent().css("margin-left").split("px")[0])/imgSize * -1) * -1 + 1;
+
+  console.log(movePos);
+
+  $(this).parent().css("margin-left", movePos * imgSize);
+})
+
+$(".btn_right").on("click", function(){
+  var imgSize = $(this).parent().parent().width();
+  var movePos = Math.ceil(Number($(this).parent().css("margin-left").split("px")[0])/imgSize) - 1;
+
+  $(this).parent().css("margin-left", movePos * imgSize);
+})
+
 
 //모달 공통
 //모달 호출
