@@ -64,9 +64,15 @@ $(".h_right li").on("click", function(){
 // 슬라이드
 $(".btn_left").on("click", function(){
   var imgSize = $(this).parent().parent().width();
-  var movePos = Math.ceil(Number($(this).parent().css("margin-left").split("px")[0])/imgSize * -1) * -1 + 1;
+  var movePos = Math.floor(Number($(this).parent().css("margin-left").split("px")[0])/imgSize)+ 1;
 
-  console.log(movePos);
+  if(movePos == 0){
+    $(this).css("display", "none");
+  }
+
+  if($(this).parent().width()*-1 == imgSize * (movePos-2) || $(this).parent().width()*-1 == Math.floor(imgSize * (movePos-2))){
+    $(this).next().css("display", "inline-block");
+  }
 
   $(this).parent().css("margin-left", movePos * imgSize);
 })
@@ -74,6 +80,14 @@ $(".btn_left").on("click", function(){
 $(".btn_right").on("click", function(){
   var imgSize = $(this).parent().parent().width();
   var movePos = Math.ceil(Number($(this).parent().css("margin-left").split("px")[0])/imgSize) - 1;
+
+  if(movePos == -1){
+    $(this).prev().css("display", "inline-block");
+  }
+
+  if($(this).parent().width()*-1 == imgSize * (movePos-1) || $(this).parent().width()*-1 == Math.floor(imgSize * (movePos-1))){
+    $(this).css("display", "none");
+  }
 
   $(this).parent().css("margin-left", movePos * imgSize);
 })

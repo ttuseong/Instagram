@@ -72,8 +72,8 @@ body { background-color: #fafafa; height: 100%; padding-top: 54px; box-sizing: b
 .postContent_size { max-width: 935px; width: 100%; border: none; border-radius: 0;}
 .modal_size_cancel { width: auto; font-size: 0;}
 .postContent_left { display: inline-block; width: calc(100% - 335px); }
-.postContent_left .postContent_left_container { line-height: 600px; background-color: black; overflow: hidden;}
-.postContent_left .postContent_left_container .postContent_left_size { width: 1200px; }
+.postContent_left .postContent_left_container { line-height: 600px; background-color: black; overflow: hidden; position: relative;}
+.postContent_left .postContent_left_container .postContent_left_size { width: 1200px; transition: all 0.3s ease-in-out; }
 .postContent_left .postContent_left_size .postContent_left_content { width: 600px; height: 100%; display: inline-block;}
 .postContent_left .postContent_left_size img { width: 100%; vertical-align: middle;}
 
@@ -114,6 +114,13 @@ body { background-color: #fafafa; height: 100%; padding-top: 54px; box-sizing: b
 .postContent_right_bottom .postContent_right_bottom_comment button { position: absolute; top: 50%; transform: translateY(-50%); right: 17px; border: 0; background: 0; color: #0095f6; opacity: .3; font-size: 14px; font-weight: 600;}
 /* test */
 .test { display: block;}
+
+/* 슬라이드 */
+.btn_left { display: none; position: absolute; font-size: 20px; width: 20px; height: 20px; border-radius: 50%; top: 50%; left: 10px; background-color: rgba(255,255,255,0.5); }
+.btn_left:hover{cursor: pointer;}
+.btn_right { position: absolute; font-size: 20px; width: 20px; height: 20px; border-radius: 50%; top: 50%; right: 10px; background-color: rgba(255,255,255,0.5); }
+.btn_right:hover{cursor: pointer;}
+.posCenter { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
 /* mediaquery */
 @media(max-width : 935px){
