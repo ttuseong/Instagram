@@ -1,22 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>닉네임(id) . instagram</title>
-
-<link rel="stylesheet" href="../../assets/css/reset.css">
-<link rel="stylesheet" href="../../assets/css/main.css">
-<link rel="stylesheet" href="../../assets/css/user.css">
-
-<script src="../../assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
-<script src="https://kit.fontawesome.com/ff5ee53d46.js" crossorigin="anonymous"></script>
- <!-- 공통 -->
-
- <link rel="stylesheet" href="../../assets/css/mainPage.css">
-
-</head>
-
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>instagram</title>
+	
+	    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/reset.css">
+	    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/write.css">
+	
+	    <script src="${pageContext.request.contextPath}/assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+	    <script src="https://kit.fontawesome.com/ff5ee53d46.js" crossorigin="anonymous"></script>
+	    <!-- 공통 -->
+	
+	    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/mainPage.css">
+  	</head>
 <body>
 
   <header id="header">
@@ -25,7 +27,7 @@
         <div class="row">
           <div class="h_contents">
             <div class="h_left">
-              <a href="#"><img src="../../assets/images/logo.png" alt="로고 이미지" class="logoImg"></a>
+              <a href="#"><img src="${pageContext.request.contextPath}/assets/images/logo.png" alt="로고 이미지" class="logoImg"></a>
             </div>
             <!-- h_left -->
             <div class="h_center">
@@ -60,7 +62,7 @@
                 <li data-id="header_user_info">
                   <div class=""></div>
                   <a href="#" onclick="preventClick(event)" >
-                    <img class="userImg" src="../../assets/images/testImg1.png" alt="사용자 이미지">
+                    <img class="userImg" src="${pageContext.request.contextPath}/assets/images/testImg1.png" alt="사용자 이미지">
                   </a>
                 </li>
               </ul>
@@ -73,7 +75,7 @@
                       <div class="helper"></div>
                       <div class="modal_like_userImg">
                         <div class="modal_like_userImg_bg">
-                          <img src="../../assets/images/testImg3.jpg" alt="">
+                          <img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg" alt="">
                         </div>
                       </div>
                       <div class="modal_like_msg">
@@ -81,14 +83,14 @@
                         <a href="#" class="modal_like_msg_to">@사망도비</a> zzzzz
                       </div>
                       <div class="modal_like_postImg">
-                        <img src="../../assets/images/testImg8.jpg" alt="">
+                        <img src="${pageContext.request.contextPath}/assets/images/testImg8.jpg" alt="">
                       </div>
                     </li>
                     <li>
                       <div class="helper"></div>
                       <div class="modal_like_userImg">
                         <div class="modal_like_userImg_bg">
-                          <img src="../../assets/images/testImg3.jpg" alt="">
+                          <img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg" alt="">
                         </div>
                       </div>
                       <div class="modal_like_msg follow">
@@ -102,7 +104,7 @@
                       <div class="helper"></div>
                       <div class="modal_like_userImg">
                         <div class="modal_like_userImg_bg">
-                          <img src="../../assets/images/testImg3.jpg" alt="">
+                          <img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg" alt="">
                         </div>
                       </div>
                       <div class="modal_like_msg">
@@ -110,7 +112,7 @@
                         <a href="#" class="modal_like_msg_to">@사망도비</a> zzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwe
                       </div>
                       <div class="modal_like_postImg">
-                        <img src="../../assets/images/testImg8.jpg" alt="">
+                        <img src="${pageContext.request.contextPath}/assets/images/testImg8.jpg" alt="">
                       </div>
                     </li>
                   </ul>
@@ -157,166 +159,72 @@
     </div>
   </header>
   
+
 		
 	 <main>
       <section id="mainSection">
         <div class="container">
-          <section class="user-maincontentsSection">
-         	 <section class="user-profile-basicInfoSection">
-         	 	<div class="user-profile-basicInfoContainer">
-	         	 	<div class="user-profile-container">
-			          	<div class="user-profile-background">
-			          		<div class="user-profile">
-			          			<img src="../../assets/images/testImg3.jpg">
-			          		</div>
-			          	</div>
-		          	</div> <!-- 유저 프로필 사진 부분 끝 -->
-		          	
-		          	<div class="user-profile-basicInfo">
-						<div class="user-idAndEtc">
-							<p class="user-userID">h_miny</p>
-							
-							<!-- 본인 계정의 페이지를 방문한 경우 -->	
-							<div class="user-myProfile">
-								<div class="user-userProfileEdit">
-									<p>프로필 편집</p>
-								</div>
-								
-								<i class="fas fa-cog"></i>	
-							</div>
-							
-							<!-- 내가 팔로우 한 계정의 페이지를 방문한 경우 -->
-							<!-- <div class="user-followingProfile">
-								<div class="user-sendMessage">
-									<p>메시지 보내기</p>
-								</div>
-								
-								<div class="user-userFollow">
-									<i class="fas fa-user-check"></i>
-								</div>
-								
-								<div class="user-FollowingUserEtcButton">
-									<i class="fas fa-ellipsis-h"></i>
-								</div>
-							</div> -->
-							
-							<!-- 내가 팔로우 하지 않은 계정의 페이지를 방문한 경우 -->
-							<!-- <div class="user-otherProfile">
-								<div class="user-addFollow">
-									<p>팔로우</p>
-								</div>
-								
-								<div class="user-addFollowEtc">
-									<i class="fas fa-caret-down"></i>
-								</div>
-								
-								<div class="user-userEtcButton">
-									<i class="fas fa-ellipsis-h"></i>
-								</div>
-							</div> -->
-						</div> <!-- 유저 아이디 등등 -->
-						
-						<div class="user-postAndFollower">
-							<div class="user-post">
-								<p>게시물</p>
-								<p>5</p>
-							</div>
-							
-							<div class="user-follower">
-								<p>팔로워</p>
-								<p>20</p>
-							</div>
-							
-							<div class="user-follow">
-								<p>팔로우</p>
-								<p>152</p>
-							</div>
-						</div> <!-- 게시글&팔로워 -->
-						
-						<div class="user-userIntroduce">
-							<div class="user-userName">
-								<p>도비</p>
-							</div>
-							
-							<div class="user-userIntroduce">
-								<p>자유를 꿈꾸는 도비예요!</p>
-							</div>
-							
-							<div class="user-userLink">
-								<p>
-									<a href="#">https://www.lovelyDobby.com</a>
-								</p>
-							</div>
-							
-							<div class="user-associatedUsers">
-								<p>
-									harry_potter, Lucius_Malfoy님 외 1명이 팔로우합니다
-								</p>
-							</div>
-						</div> <!-- 유저 네임&소개&링크&내가 팔로워 한 사람 중에 해당 유저를 팔로워 한 사람들 -->
-		          	</div> <!-- 유저 기본 정보 부분 끝 -->
-	          	</div> <!-- 유저 기본 정보 프로필 컨테이너 끝 -->
-          	</section> <!-- 유저 기본 정보 프로필 섹션 끝 -->
+          <section class="write-maincontents">
+          	<section class="write-photoSection">
+          		<div class="write-photo-title">
+          			<p>새 게시글</p>
+          		</div> <!-- end of write-photoAndDiscription-title -->
+          		
+          		<div class="write-photoContainer">
+          			
+          			<!-- 이미지 추가 -->
+          			<div class="write-showPhoto">
+          				<i class="fas fa-times"></i>
+          				<img src="${pageContext.request.contextPath}/assets/images/testImg5.jpg">
+        			</div>
+        			
+          			<div class="write-showPhoto">
+          				<i class="fas fa-times"></i>
+          				<img src="${pageContext.request.contextPath}/assets/images/testImg6.jpg">
+        			</div>
+          			
+          			<!-- 이미지 추가 버튼 -->
+          			<div class="write-addPhoto">
+          				<i class="fas fa-plus"></i>
+        			</div> <!-- end of write-photoContainer -->
+          		</div> <!-- end of write-photoAndDiscriptionContainer -->
+          	</section> <!-- end of write-photoAndDiscriptionSection -->
           	
-          	<section class="user-highlightSection">
+          	<hr>
           	
-          		<div class="user-highlightContainer">
-          			<div class="user-highlightImgContainer">
-			          	<div class="user-highlightImg-background">
-			          		<div class="user-highlightImg">
-			          			<img src="../../assets/images/testImg3.jpg">
-			          		</div>
-			          	</div>
-		          	</div><!-- 하이라이트 이미지 -->
-		          	
-		          	<p>도비의 옷장</p>
+          	<section class="write-DiscriptionSection">
+          		<div class="write-DiscriptionContainer">
+          			<p>내용 입력</p>
+        			<textarea placeholder="이 곳에 내용을 입력하세요."></textarea>
+       			</div> <!-- end of write-DiscriptionContainer -->
+          	</section> <!-- end of write-userTagSection -->
+          	
+          	<hr>
+          	
+          	<section class="write-userTagSection">
+          		<div class="write-userTagSectionContainer">
+	          		<p>사람 태그하기</p>
+	          		<i class="fas fa-chevron-right"></i>
           		</div>
-          		
-          		<div class="user-highlightContainer">
-          			<div class="user-highlightImgContainer">
-			          	<div class="user-highlightImg-background">
-			          		<div class="user-highlightImg">
-			          			<img src="../../assets/images/testImg4.jpg">
-			          		</div>
-			          	</div>
-		          	</div><!-- 하이라이트 이미지 -->
-		          	
-		          	<p>도비의 친구들</p>
+          	</section> <!-- end of write-userTagSection -->
+          	
+          	<hr>
+          	
+          	<section class="write-userLocationSection">
+          		<div class="write-userLocationSectionContainer">
+	          		<p>위치 추가</p>
+	          		<i class="fas fa-chevron-right"></i>
           		</div>
-          		
-          		<div class="user-highlightContainer">
-          			<div class="user-highlightImgContainer">
-			          	<div class="user-highlightImg-background">
-			          		<div class="user-highlightImg">
-			          			<img src="../../assets/images/testImg5.jpg">
-			          		</div>
-			          	</div>
-		          	</div><!-- 하이라이트 이미지 -->
-		          	
-		          	<p>도비의 마법</p>
-          		</div>
-          		
-          		<div class="user-highlightContainer">
-          			<div class="user-highlightImgContainer">
-			          	<div class="user-highlightImg-background">
-			          		<div class="user-highlightImg">
-			          			<img src="../../assets/images/testImg6.jpg">
-			          		</div>
-			          	</div>
-		          	</div><!-- 하이라이트 이미지 -->
-		          	
-		          	<p>도비의 셀피</p>
-          		</div>
-          		
-          	</section> <!-- 하이라이트 섹션 끝 -->
+          	</section> <!-- end of write-userLocationSection -->
+          	
           	
           </section> <!-- end of maincontents -->
         </div> <!-- end of container -->
       </section> <!-- end of mainSection -->
     </main>
+   
+  </body>
 
-</body>
-
-<script src="../../assets/js/main.js" type="text/javascript"></script>
-<script src="../../assets/js/mainPage.js" type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/assets/js/main.js" type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/assets/js/mainPage.js" type="text/javascript"></script>
 </html>

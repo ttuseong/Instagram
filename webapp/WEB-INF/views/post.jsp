@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
-<html>
+<html lang="ko" dir="ltr">
 	<head>
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,7 @@
 	        <div class="row">
 	          <div class="h_contents">
 	            <div class="h_left">
-	              <a href="#"><img src="../assets/images/logo.png" alt="로고 이미지" class="logoImg"></a>
+	              <a href="#"><img src="${pageContext.request.contextPath}/assets/images/logo.png" alt="로고 이미지" class="logoImg"></a>
 	            </div>
 	            <!-- h_left -->
 	            <div class="h_center">
@@ -64,7 +64,7 @@
 	                <li data-id="header_user_info">
 	                  <div class=""></div>
 	                  <a href="#" onclick="preventClick(event)" >
-	                    <img class="userImg" src="../assets/images/testImg1.png" alt="사용자 이미지">
+	                    <img class="userImg" src="${pageContext.request.contextPath}/assets/images/testImg1.png" alt="사용자 이미지">
 	                  </a>
 	                </li>
 	              </ul>
@@ -77,7 +77,7 @@
 	                      <div class="helper"></div>
 	                      <div class="modal_like_userImg">
 	                        <div class="modal_like_userImg_bg">
-	                          <img src="../assets/images/testImg3.jpg" alt="">
+	                          <img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg" alt="">
 	                        </div>
 	                      </div>
 	                      <div class="modal_like_msg">
@@ -85,14 +85,14 @@
 	                        <a href="#" class="modal_like_msg_to">@사망도비</a> zzzzz
 	                      </div>
 	                      <div class="modal_like_postImg">
-	                        <img src="../assets/images/testImg8.jpg" alt="">
+	                        <img src="${pageContext.request.contextPath}/assets/images/testImg8.jpg" alt="">
 	                      </div>
 	                    </li>
 	                    <li>
 	                      <div class="helper"></div>
 	                      <div class="modal_like_userImg">
 	                        <div class="modal_like_userImg_bg">
-	                          <img src="../assets/images/testImg3.jpg" alt="">
+	                          <img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg" alt="">
 	                        </div>
 	                      </div>
 	                      <div class="modal_like_msg follow">
@@ -106,7 +106,7 @@
 	                      <div class="helper"></div>
 	                      <div class="modal_like_userImg">
 	                        <div class="modal_like_userImg_bg">
-	                          <img src="../assets/images/testImg3.jpg" alt="">
+	                          <img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg" alt="">
 	                        </div>
 	                      </div>
 	                      <div class="modal_like_msg">
@@ -114,7 +114,7 @@
 	                        <a href="#" class="modal_like_msg_to">@사망도비</a> zzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwe
 	                      </div>
 	                      <div class="modal_like_postImg">
-	                        <img src="../assets/images/testImg8.jpg" alt="">
+	                        <img src="${pageContext.request.contextPath}/assets/images/testImg8.jpg" alt="">
 	                      </div>
 	                    </li>
 	                  </ul>
@@ -201,7 +201,7 @@
 	              
 	              <div class="gallery_no_main">
 	                <div class="gallery_no_main_pic"> 
-	                  <img class="gallery_no_main_pic_pic" src="../assets/images/nopic1.jpg">
+	                  <img class="gallery_no_main_pic_pic" src="${pageContext.request.contextPath}/assets/images/nopic1.jpg">
 	              </div>
 	              
 	                <div class="gallery_no_main_box">
@@ -211,9 +211,9 @@
 	                      <h3 class="gallery_no_main_text_small">앱을 다운로드하고 첫 사진이나 동영상을 공유해보세요.</h3>
 	                      <div class="gallery_no_main_logo"> 
 	                        <a target="_blank" href="https://apps.apple.com/app/instagram/id389801252?vt=li">
-	                          <img class="gallery_no_main_info_pic" src="../assets/images/nopic2.png"/></a>
+	                          <img class="gallery_no_main_info_pic" src="${pageContext.request.contextPath}/assets/images/nopic2.png"/></a>
 	                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=utm_source%3Dinstagramweb%26utm_campaign%3DprofilePage%26ig_mid%3D4E87E08D-5723-455B-9D58-937C587D6490%26utm_content%3Dli%26utm_medium%3Dbadge">
-	                          <img class="gallery_no_main_info_pic" src="../assets/images/nopic3.png"/></a>
+	                          <img class="gallery_no_main_info_pic" src="${pageContext.request.contextPath}/assets/images/nopic3.png"/></a>
 	                      </div>
 	                   </div>
 	                  </div>
@@ -230,7 +230,7 @@
 	              <div class="gallery_no_content">
 	                        
 	                <div class="gallery_no_icon">
-	                    <img src="../assets/images/mark3.png"/>
+	                    <img src="${pageContext.request.contextPath}/assets/images/mark3.png"/>
 	                </div>
 	                <div class="gallery_no_content_info">
 	                    <h1 class="gallery_no_content_info_text">사진 없음</h1>
@@ -255,7 +255,7 @@
 	                    <span>0</span>
 	                  </div>
 	                  <div class="gallery_one">
-	                    <img class="gallery_item" src="../assets/images/testImg8.jpg"/>
+	                    <img class="gallery_item" src="${pageContext.request.contextPath}/assets/images/testImg8.jpg"/>
 	                  </div>
 	                </div>
 	
@@ -271,7 +271,7 @@
 	                    <span>0</span>
 	                  </div>
 	                  <div class="gallery_one">
-	                    <img class="gallery_item" src="../assets/images/testImg10.jpg"/>
+	                    <img class="gallery_item" src="${pageContext.request.contextPath}/assets/images/testImg10.jpg"/>
 	                  </div>
 	                </div>
 	
@@ -287,7 +287,7 @@
 	                    <span>10</span>
 	                  </div>
 	                  <div class="gallery_one">
-	                    <img class="gallery_item" src="../assets/images/testImg11.jpg"/>
+	                    <img class="gallery_item" src="${pageContext.request.contextPath}/assets/images/testImg11.jpg"/>
 	                  </div>
 	                </div>
 	              </div>
@@ -306,7 +306,7 @@
 	                    <span>0</span>
 	                  </div>
 	                  <div class="gallery_one">
-	                    <img class="gallery_item" src="../assets/images/testImg3.jpg"/>
+	                    <img class="gallery_item" src="${pageContext.request.contextPath}/assets/images/testImg3.jpg"/>
 	                  </div>
 	                </div>
 	
@@ -322,13 +322,13 @@
 	                    <span>0</span>
 	                  </div>
 	                  <div class="gallery_one">
-	                    <img class="gallery_item" src="../assets/images/testImg2.jpeg"/>
+	                    <img class="gallery_item" src="${pageContext.request.contextPath}/assets/images/testImg2.jpeg"/>
 	                  </div>
 	                </div>
 	
 	                <div class="gallery_match">
 	                  <div class="gallery_one">
-	                    <img class="gallery_item" src="../assets/images/empty.png"/>
+	                    <img class="gallery_item" src="${pageContext.request.contextPath}/assets/images/empty.png"/>
 	                  </div>
 	                </div>
 	              </div>
@@ -379,6 +379,6 @@
 	
 	</body>
 
-	<script src="../assets/js/main.js" type="text/javascript"></script>
-	<script src="../assets/js/mainPage.js" type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/assets/js/main.js" type="text/javascript"></script>
+	<script src="${pageContext.request.contextPath}/assets/js/mainPage.js" type="text/javascript"></script>
 </html>

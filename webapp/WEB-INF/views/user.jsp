@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
-<html>
+<html lang="ko" dir="ltr">
 	<head>
 	    <meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +28,7 @@
 	        <div class="row">
 	          <div class="h_contents">
 	            <div class="h_left">
-	              <a href="#"><img src="../assets/images/logo.png" alt="로고 이미지" class="logoImg"></a>
+	              <a href="#"><img src="${pageContext.request.contextPath}/assets/images/logo.png" alt="로고 이미지" class="logoImg"></a>
 	            </div>
 	            <!-- h_left -->
 	            <div class="h_center">
@@ -63,7 +63,7 @@
 	                <li data-id="header_user_info">
 	                  <div class=""></div>
 	                  <a href="#" onclick="preventClick(event)" >
-	                    <img class="userImg" src="../assets/images/testImg1.png" alt="사용자 이미지">
+	                    <img class="userImg" src="${pageContext.request.contextPath}/assets/images/testImg1.png" alt="사용자 이미지">
 	                  </a>
 	                </li>
 	              </ul>
@@ -76,7 +76,7 @@
 	                      <div class="helper"></div>
 	                      <div class="modal_like_userImg">
 	                        <div class="modal_like_userImg_bg">
-	                          <img src="../assets/images/testImg3.jpg" alt="">
+	                          <img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg" alt="">
 	                        </div>
 	                      </div>
 	                      <div class="modal_like_msg">
@@ -84,14 +84,14 @@
 	                        <a href="#" class="modal_like_msg_to">@사망도비</a> zzzzz
 	                      </div>
 	                      <div class="modal_like_postImg">
-	                        <img src="../assets/images/testImg8.jpg" alt="">
+	                        <img src="${pageContext.request.contextPath}/assets/images/testImg8.jpg" alt="">
 	                      </div>
 	                    </li>
 	                    <li>
 	                      <div class="helper"></div>
 	                      <div class="modal_like_userImg">
 	                        <div class="modal_like_userImg_bg">
-	                          <img src="../assets/images/testImg3.jpg" alt="">
+	                          <img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg" alt="">
 	                        </div>
 	                      </div>
 	                      <div class="modal_like_msg follow">
@@ -105,7 +105,7 @@
 	                      <div class="helper"></div>
 	                      <div class="modal_like_userImg">
 	                        <div class="modal_like_userImg_bg">
-	                          <img src="../assets/images/testImg3.jpg" alt="">
+	                          <img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg" alt="">
 	                        </div>
 	                      </div>
 	                      <div class="modal_like_msg">
@@ -113,7 +113,7 @@
 	                        <a href="#" class="modal_like_msg_to">@사망도비</a> zzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwezzqweqwe
 	                      </div>
 	                      <div class="modal_like_postImg">
-	                        <img src="../assets/images/testImg8.jpg" alt="">
+	                        <img src="${pageContext.request.contextPath}/assets/images/testImg8.jpg" alt="">
 	                      </div>
 	                    </li>
 	                  </ul>
@@ -170,7 +170,7 @@
 		         	 	<div class="user-profile-container">
 				          	<div class="user-profile-background">
 				          		<div class="user-profile">
-				          			<img src="../assets/images/testImg3.jpg">
+				          			<img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg">
 				          		</div>
 				          	</div>
 			          	</div> <!-- 유저 프로필 사진 부분 끝 -->
@@ -267,7 +267,7 @@
 	          			<div class="user-highlightImgContainer">
 				          	<div class="user-highlightImg-background">
 				          		<div class="user-highlightImg">
-				          			<img src="../assets/images/testImg3.jpg">
+				          			<img src="${pageContext.request.contextPath}/assets/images/testImg3.jpg">
 				          		</div>
 				          	</div>
 			          	</div><!-- 하이라이트 이미지 -->
@@ -279,7 +279,7 @@
 	          			<div class="user-highlightImgContainer">
 				          	<div class="user-highlightImg-background">
 				          		<div class="user-highlightImg">
-				          			<img src="../assets/images/testImg4.jpg">
+				          			<img src="${pageContext.request.contextPath}/assets/images/testImg4.jpg">
 				          		</div>
 				          	</div>
 			          	</div><!-- 하이라이트 이미지 -->
@@ -291,7 +291,7 @@
 	          			<div class="user-highlightImgContainer">
 				          	<div class="user-highlightImg-background">
 				          		<div class="user-highlightImg">
-				          			<img src="../assets/images/testImg5.jpg">
+				          			<img src="${pageContext.request.contextPath}/assets/images/testImg5.jpg">
 				          		</div>
 				          	</div>
 			          	</div><!-- 하이라이트 이미지 -->
@@ -303,7 +303,7 @@
 	          			<div class="user-highlightImgContainer">
 				          	<div class="user-highlightImg-background">
 				          		<div class="user-highlightImg">
-				          			<img src="../assets/images/testImg6.jpg">
+				          			<img src="${pageContext.request.contextPath}/assets/images/testImg6.jpg">
 				          		</div>
 				          	</div>
 			          	</div><!-- 하이라이트 이미지 -->
