@@ -1,0 +1,118 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/reset.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/main.css">
+
+    <script src="${pageContext.request.contextPath}/assets/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/ff5ee53d46.js" crossorigin="anonymous"></script>
+    <!-- 공통 -->
+
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/login.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="login_content">
+          <div class="helper"></div>
+          <div class="login_left">
+            <img src="${pageContext.request.contextPath}/assets/images/화면광고2.jpg" alt="">
+          </div>
+          <div class="login_right" >
+            <div class="login_right_info">
+              <h1>인스타그램</h1>
+
+              <form class="" action="index.html" method="post">
+                <input placeholder="전화번호, 사용자 이름 또는 이메일" type="text" name="" value="">
+                <input placeholder="비밀번호" type="text" name="" value="">
+                <button type="button" name="button">로그인</button>
+              </form>
+
+              <div class="login_right_or">
+                <div class="login_or_line"></div>
+                <div class="login_or_text">또는</div>
+                <div class="login_or_line"></div>
+              </div>
+
+              <div class="login_right_anotherLog">
+                <span>
+                  <i class="fab fa-facebook-square"></i>
+                </span>
+                <p>Facebook으로 로그인</p>
+              </div>
+
+              <a class="login_right_search_pw">비밀번호를 잊으셨나요?</a>
+
+            </div>
+            <div class="login_right_reg">
+              <p>
+                계정이 없으신가요? <a>가입하기</a>
+              </p>
+            </div>
+            <div class="login_right_app">
+              <div class="login_right_app_text">
+                <p>앱을 다운로드하세요.</p>
+              </div>
+              <div class="login_right_app_img">
+                <div class="login_right_app_appstore">
+                  <img src="${pageContext.request.contextPath}/assets/images/앱스토어.png" alt="">
+                </div>
+                <div class="login_right_app_playstore">
+                  <img src="${pageContext.request.contextPath}/assets/images/플레이스토어.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="login_footer">
+        <div class="login_footer_top">
+          <div class="login_footer_link1">
+            <ul>
+              <li><a href="#">소개</a></li>
+              <li><a href="#">블로그</a></li>
+              <li><a href="#">채용 정보</a></li>
+              <li><a href="#">도움말</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">약관</a></li>
+              <li><a href="#">인기 계정</a></li>
+              <li><a href="#">해시태그</a></li>
+              <li><a href="#">위치</a></li>
+            </ul>
+          </div>
+          <div class="login_footer_link2">
+            <ul>
+              <li><a href="#">뷰티</a></li>
+              <li><a href="#">댄스 및 공연</a></li>
+              <li><a href="#">피트니스</a></li>
+              <li><a href="#">식음료</a></li>
+              <li><a href="#">집 및 정원</a></li>
+              <li><a href="#">음악</a></li>
+              <li><a href="#">시각 예술</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="login_footer_bottom">
+          <div class="login_footer_scroll">
+            <select class="" name="">
+              <option value="">Engilsh</option>
+              <option value="" selected>한국어</option>
+            </select>
+          </div>
+          <div class="login_footer_text">
+            <p>© 2020 Instagram from Facebook</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
