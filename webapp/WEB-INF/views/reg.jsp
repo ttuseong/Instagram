@@ -14,56 +14,55 @@
     <script src="https://kit.fontawesome.com/ff5ee53d46.js" crossorigin="anonymous"></script>
     <!-- 공통 -->
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/login.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/reg.css">
   </head>
   <body>
     <main>
       <div class="container">
-        <div class="login_content">
-          <div class="helper"></div>
-          <div class="login_left">
-            <img src="${pageContext.request.contextPath}/assets/images/화면광고2.jpg" alt="">
-          </div>
-          <div class="login_right" >
-            <div class="login_right_info">
+        <div class="reg_content">
+          <div class="reg_size">
+            <div class="reg">
               <h1>인스타그램</h1>
 
-              <form class="" action="index.html" method="post">
-                <input placeholder="전화번호, 사용자 이름 또는 이메일" type="text" name="" value="">
-                <input placeholder="비밀번호" type="password" name="" value="">
-                <button type="button" name="button">로그인</button>
-              </form>
+              <p class="reg_message">친구들의 사진과 동영상을 보려면 가입하세요.</p>
 
-              <div class="login_right_or">
-                <div class="login_or_line"></div>
-                <div class="login_or_text">또는</div>
-                <div class="login_or_line"></div>
-              </div>
-
-              <div class="login_right_anotherLog">
+              <button class="reg_anotherLog" type="button" name="button">
                 <span>
                   <i class="fab fa-facebook-square"></i>
                 </span>
                 <p>Facebook으로 로그인</p>
+              </button>
+
+              <div class="reg_or">
+                <div class="reg_or_line"></div>
+                <div class="reg_or_text">
+                  또는
+                </div>
+                <div class="reg_or_line"></div>
               </div>
 
-              <a class="login_right_search_pw">비밀번호를 잊으셨나요?</a>
+              <form>
+                <input placeholder="휴대폰 번호 또는 이메일 주소" type="text" name="userEmail" value="">
+                <input placeholder="성명" type="text" name="userName" value="">
+                <input placeholder="사용자 이름" type="text" name="userId" value="">
+                <input placeholder="비밀번호" type="text" name="userPw" value="">
+                <button class="regBtn" type="button" name="button">가입</button>
+              </form>
 
+              <p class="reg_text">가입하면 Instagram의 <a href="#">약관</a>, <a href="#">데이터 정책</a> 및 <a href="#">쿠키 정책</a>에 동의하게 됩니다.</p>
             </div>
-            <div class="login_right_reg">
-              <p>
-                계정이 없으신가요? <a href="${pageContext.request.contextPath}/reg">가입하기</a>
-              </p>
+            <div class="reg_login">
+              <p>계정이 있으신가요? <a href="#">로그인</a></p>
             </div>
-            <div class="login_right_app">
-              <div class="login_right_app_text">
+            <div class="reg_app">
+              <div class="reg_app_text">
                 <p>앱을 다운로드하세요.</p>
               </div>
-              <div class="login_right_app_img">
-                <div class="login_right_app_appstore">
+              <div class="reg_app_img">
+                <div class="reg_app_appstore">
                   <img src="${pageContext.request.contextPath}/assets/images/앱스토어.png" alt="">
                 </div>
-                <div class="login_right_app_playstore">
+                <div class="reg_app_playstore">
                   <img src="${pageContext.request.contextPath}/assets/images/플레이스토어.png" alt="">
                 </div>
               </div>
@@ -73,9 +72,9 @@
       </div>
     </main>
     <footer>
-      <div class="login_footer">
-        <div class="login_footer_top">
-          <div class="login_footer_link1">
+      <div class="reg_footer">
+        <div class="reg_footer_top">
+          <div class="reg_footer_link1">
             <ul>
               <li><a href="#">소개</a></li>
               <li><a href="#">블로그</a></li>
@@ -89,30 +88,20 @@
               <li><a href="#">위치</a></li>
             </ul>
           </div>
-          <div class="login_footer_link2">
-            <ul>
-              <li><a href="#">뷰티</a></li>
-              <li><a href="#">댄스 및 공연</a></li>
-              <li><a href="#">피트니스</a></li>
-              <li><a href="#">식음료</a></li>
-              <li><a href="#">집 및 정원</a></li>
-              <li><a href="#">음악</a></li>
-              <li><a href="#">시각 예술</a></li>
-            </ul>
-          </div>
         </div>
-        <div class="login_footer_bottom">
-          <div class="login_footer_scroll">
+        <div class="reg_footer_bottom">
+          <div class="reg_footer_scroll">
             <select class="" name="">
               <option value="">Engilsh</option>
               <option value="" selected>한국어</option>
             </select>
           </div>
-          <div class="login_footer_text">
+          <div class="reg_footer_text">
             <p>© 2020 Instagram from Facebook</p>
           </div>
         </div>
       </div>
     </footer>
   </body>
+  <script src="${pageContext.request.contextPath}/assets/js/reg.js" type="text/javascript"></script>
 </html>

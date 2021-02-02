@@ -5,6 +5,7 @@
 .helper {display: inline-block; vertical-align: middle;}
 .modalOpen{ cursor: pointer;}
 .scrollHidden { overflow: hidden;}
+.active { opacity: 1 !important; cursor: pointer; }
 
 html { height: 100%; }
 body { background-color: #fafafa; height: 100%; padding-top: 54px; box-sizing: border-box;}
