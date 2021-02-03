@@ -60,16 +60,14 @@ $(".regBtn").on("click", function(){
 						userId : $("input[name=userId]").val(),
 						userPw : $("input[name=userPw]").val()};
 		
-		console.log(formData);
-		
 		$.ajax({		
-			url : url+"/regSucces",			
+			url : url+"/reg",			
 			type: "post",
            	contentType : "application/json",
-			data : formData,
+			data : JSON.stringify(formData),
 			dataType : "json",
-			success : function(categoryUpdate){
-				console.log(categoryUpdate);
+			success : function(test){
+				window.location.href = url + "/";
 			},	
 			error : function(XHR, status, error) {
 				console.error(status + " : " + error);

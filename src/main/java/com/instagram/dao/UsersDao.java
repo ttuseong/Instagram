@@ -1,6 +1,7 @@
 package com.instagram.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,5 +16,9 @@ public class UsersDao {
 	
 	public List<UsersVo> getTest(){
 		return session.selectList("users.test");
+	}
+	
+	public void reg(Map<String, Object> map) {
+		System.out.println(session.insert("users.insertReg",map));
 	}
 }

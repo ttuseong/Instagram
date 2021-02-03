@@ -10,4 +10,11 @@
 			    users
 		]]>
 	</select>
+	
+	<insert id="insertReg" parameterType="map">
+		<![CDATA[
+			insert into users
+			values(sq_users.nextval, #{userId}, #{userPw}, '', '', '', '', #{userEmail}, '', #{userName})
+		]]>
+	</insert>
 </mapper>

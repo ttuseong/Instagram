@@ -52,7 +52,7 @@
               <p class="reg_text">가입하면 Instagram의 <a href="#">약관</a>, <a href="#">데이터 정책</a> 및 <a href="#">쿠키 정책</a>에 동의하게 됩니다.</p>
             </div>
             <div class="reg_login">
-              <p>계정이 있으신가요? <a href="#">로그인</a></p>
+              <p>계정이 있으신가요? <a href="${pageContext.request.contextPath}/">로그인</a></p>
             </div>
             <div class="reg_app">
               <div class="reg_app_text">

@@ -52,7 +52,7 @@
             </div>
             <div class="login_right_reg">
               <p>
-                계정이 없으신가요? <a href="${pageContext.request.contextPath}/reg">가입하기</a>
+                계정이 없으신가요? <a href="${pageContext.request.contextPath}/regPage">가입하기</a>
               </p>
             </div>
             <div class="login_right_app">
