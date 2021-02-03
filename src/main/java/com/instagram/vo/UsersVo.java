@@ -11,11 +11,12 @@ public class UsersVo {
 	private String userImg;
 	private String userName;
 	private String userEmail;
+	private String slat;
 	
 	public UsersVo() {}
 	
 	public UsersVo(int userNo, String userId, String userPW, String userPhone, String userGender, String userIntro,
-			String userLink, String userImg, String userName, String userEmail) {
+			String userLink, String userImg, String userName, String userEmail, String slat) {
 		this.userNo = userNo;
 		this.userId = userId;
 		this.userPW = userPW;
@@ -26,6 +27,7 @@ public class UsersVo {
 		this.userImg = userImg;
 		this.userName = userName;
 		this.userEmail = userEmail;
+		this.slat = slat;
 	}
 	
 	public int getUserNo() {
@@ -88,6 +90,15 @@ public class UsersVo {
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
 	}
+	
+	public String getSlat() {
+		return slat;
+	}
+
+	public void setSlat(String slat) {
+		this.slat = slat;
+	}
+
 	@Override
 	public String toString() {
 		return "UsersVo [userNo=" + userNo + ", userId=" + userId + ", userPW=" + userPW + ", userPhone=" + userPhone

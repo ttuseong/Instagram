@@ -66,8 +66,13 @@ $(".regBtn").on("click", function(){
            	contentType : "application/json",
 			data : JSON.stringify(formData),
 			dataType : "json",
-			success : function(test){
-				window.location.href = url + "/";
+			success : function(result){
+				if(result == 1){
+					window.location.href = url + "/";
+				} else{
+					alert("휴대폰 번호 또는 이메일 주소나 사용자 이름 중 중복되는 값이 있습니다");
+				}
+				
 			},	
 			error : function(XHR, status, error) {
 				console.error(status + " : " + error);

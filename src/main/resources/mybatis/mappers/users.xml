@@ -14,7 +14,7 @@
 	<insert id="insertReg" parameterType="map">
 		<![CDATA[
 			insert into users
-			values(sq_users.nextval, #{userId}, #{userPw}, '', '', '', '', #{userEmail}, '', #{userName})
+			values(sq_users.nextval, #{userId}, #{userPw}, '', '', '', '', #{userEmail}, '', #{userName}, #{salt})
 		]]>
 	</insert>
 </mapper>

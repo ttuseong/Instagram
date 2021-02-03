@@ -35,9 +35,8 @@ public class Main {
 	
 	@RequestMapping("/reg")
 	@ResponseBody
-	public String reg(@RequestBody Map<String, Object> data) {
+	public int reg(@RequestBody Map<String, Object> data) {
 		
-		usersService.reg(data);
-		return "1";
+		return usersService.reg(data);
 	}
 }

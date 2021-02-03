@@ -18,7 +18,7 @@ public class UsersDao {
 		return session.selectList("users.test");
 	}
 	
-	public void reg(Map<String, Object> map) {
-		System.out.println(session.insert("users.insertReg",map));
+	public int reg(Map<String, Object> map) {
+		return session.insert("users.insertReg",map);
 	}
 }
